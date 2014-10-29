@@ -6,8 +6,7 @@
 H1, H2, H3 {text-align:left; 
     color:#404040; 
     font-family: 'Amatic SC', sans-serif;
-    font-size: 200%;
-    text-align: center;} 
+    font-size: 200%;} 
 H1 {font-size: 250%;}
 
 H3 {font-family: 'Open Sans';
@@ -29,7 +28,14 @@ body {
 
  /* navigation bar at top of each page */
 
-
+.navbarLink {
+font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 15pt;
+    color: black;
+    margin-left: 32px;
+    margin-right: 32px;
+}
 
  IMG.displayed {
     display: block;
@@ -37,10 +43,13 @@ body {
     margin-right: auto }
 
 #nav {
+    display: table;
     line-height:50px;
     background-color:#FFFFFF;
     height:175px;
-    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .dog {
@@ -71,17 +80,36 @@ body {
 
 }
 
+a {
+    text-decoration:none;
+}
+
+a:visited {
+    color: #000000;
+}
 
 
  /* unique title formatting for nav bar */
 h1.title {
-    margin-left: 16px;
-    margin-top: 20px;
+    text-align: center;
 }
 
- /* unique title formatting for nav bar */
-ul.interests {
-    margin-left: 16px;
-    margin-top: 20px;
+.canvasContainer {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   z-index: -1;
 }
 
+.linkCanvas {
+    position: relative;
+    left: -65px;
+    top: -65px;
+}
+
+.navbarElement {
+    left: 0; top: 0;
+    position: relative;
+    float: left;
+    z-index: 10;
+}
