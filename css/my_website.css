@@ -1,0 +1,87 @@
+
+@import url('http://fonts.googleapis.com/css?family=Amatic+SC:400,700,400italic,700italic');
+@import url('http://fonts.googleapis.com/css?family=Karla:400italic,800italic,400,800');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300');
+
+H1, H2, H3 {text-align:left; 
+    color:#404040; 
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 200%;
+    text-align: center;} 
+H1 {font-size: 250%;}
+
+H3 {font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 125%;}
+p {font-family: 'Open Sans';
+    text-align: center;
+    font-size: 14px;
+    }
+
+span {font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 100%}
+
+
+body {
+    background-color: #FFFFFF;
+} 
+
+ /* navigation bar at top of each page */
+
+
+
+ IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+#nav {
+    line-height:50px;
+    background-color:#FFFFFF;
+    height:175px;
+    width:100%;
+}
+
+.dog {
+    line-height:100px;
+    float:left;
+    padding:10px;
+    text-align: center;
+}
+
+
+.dogOuter{
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.about {
+    line-height:30px;
+    background-color:#FFFFFF;
+    height:200px;
+    width:100%;
+}
+
+.aboutInner {
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+
+
+ /* unique title formatting for nav bar */
+h1.title {
+    margin-left: 16px;
+    margin-top: 20px;
+}
+
+ /* unique title formatting for nav bar */
+ul.interests {
+    margin-left: 16px;
+    margin-top: 20px;
+}
+
