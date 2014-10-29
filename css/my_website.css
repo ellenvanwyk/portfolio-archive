@@ -84,9 +84,10 @@ a {
     text-decoration:none;
 }
 
-a:visited {
-    color: #000000;
-}
+a:link    {color:#404040;}  /* unvisited link  */
+a:visited {color:#404040;}  /* visited link    */
+a:hover   {color:#404040;}  /* mouse over link */
+a:active  {color:#404040;}  /* selected link   */ 
 
 
  /* unique title formatting for nav bar */
