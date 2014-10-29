@@ -19,7 +19,7 @@
 		</div>
 	</div>
 	<div class="navbarElement">
-		<a class="navbarLink" href="work.html">Work</a>
+		<a class="navbarLink" href="index.html">Work</a>
 		<div class="canvasContainer">
 			<canvas class="linkCanvas" width="130" height="130"></canvas>
 		</div>
@@ -42,7 +42,7 @@ $( document ).ready(function() {
 			web.expand();
 			renderer.render();
 		}, 50);
-		$( ".navbarLink" ).mouseleave(function() {
+		$(this).mouseleave(function() {
 			clearInterval(interval);
 			renderer.clearCanvas();
 		});
@@ -70,24 +70,30 @@ $( document ).ready(function() {
 <div class = "dogOuter">
 	<div class="dog">
 		<figure>
-			<img src= "https://ejvw.files.wordpress.com/2014/10/logo.png" alt = "sharacter" style="width:200px;height:auto" >
-			<figcaption><span>Sharacter</span></figcaption>
+			<a href="sharacter.html">
+				<img src= "https://ejvw.files.wordpress.com/2014/10/logo.png" alt = "sharacter" style="width:200px;height:auto" >
+				<figcaption><span>Sharacter</span></figcaption>
+			</a>a
 		</figure>
 	</div>
 
 
 	<div class="dog">
 		<figure>
-			<img src= "https://ejvw.files.wordpress.com/2014/04/brain_small.png" alt = "illustration" style="width:300px;height:auto">
-			<figcaption><span>Illustration Portfolio</span></figcaption>
+			<a href="http://ejvw.wordpress.com/">
+				<img src= "https://ejvw.files.wordpress.com/2014/04/brain_small.png" alt = "illustration" style="width:300px;height:auto">
+				<figcaption><span>Illustration Portfolio</span></figcaption>
+			</a>
 		</figure>
 	</div>
 
 
 	<div class="dog">
 		<figure>
-			<img src= "https://ejvw.files.wordpress.com/2014/10/squares.jpg" alt = "Leap Motion DJ Project" style="width:200px;height:auto">
-			<figcaption><span>Leap Motion DJ Project</span></figcaption>
+			<a href="beatWave.html">
+				<img src= "https://ejvw.files.wordpress.com/2014/10/squares.jpg" alt = "Leap Motion DJ Project" style="width:200px;height:auto">
+				<figcaption><span>Leap Motion DJ Project</span></figcaption>
+			</a>
 		</figure>
 	</div>
 </div>

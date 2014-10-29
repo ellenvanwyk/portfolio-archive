@@ -5,16 +5,49 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-8"> 
 		<title> E L L E N  V A N  W Y K</title>
 		<link rel=stylesheet type="text/css" href="css/my_website.css" id="all"/>
-		<link rel=stylesheet type="text/css" href="css/my_website_front.css"  id="front"/>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="js/web.js"></script> 
 	</head>
 
 <body>
-
 <div id="nav">
-	<h1 class="title">E L L E N&nbsp;&nbsp;&nbsp;V A N&nbsp;&nbsp;&nbsp;W Y K </h1>
-	<h3> About 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Work &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact </h3>
+	<h1 class="title"><a href="index.html">E L L E N&nbsp;&nbsp;&nbsp;V A N&nbsp;&nbsp;&nbsp;W Y K </a></h1>
+	<div class="navbarElement">
+		<a class="navbarLink" href="about.html">About</a>
+		<div class="canvasContainer">
+			<canvas class="linkCanvas" width="130" height="130"></canvas>
+		</div>
+	</div>
+	<div class="navbarElement">
+		<a class="navbarLink" href="index.html">Work</a>
+		<div class="canvasContainer">
+			<canvas class="linkCanvas" width="130" height="130"></canvas>
+		</div>
+	</div>
+	<div class="navbarElement">
+		<a class="navbarLink" href="contact.html">Contact</a>
+		<div class="canvasContainer">
+			<canvas class="linkCanvas" width="130" height="130"></canvas>
+		</div>
+	</div>
 </div>
 
+<script>
+$( document ).ready(function() {
+	$(".navbarLink").mouseenter(function() {
+		var canvas = $(this).next(".canvasContainer").children("canvas")[0];
+		var web = new Web(canvas.width, canvas.height, 150, 0.1, 0.2, 0.097);
+		var renderer = new WebRenderer(web, canvas);
+		var interval = setInterval(function() {
+			web.expand();
+			renderer.render();
+		}, 50);
+		$(this).mouseleave(function() {
+			clearInterval(interval);
+			renderer.clearCanvas();
+		});
+	});
+});
 
 
 <div class = "about">
