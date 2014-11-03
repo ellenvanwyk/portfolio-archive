@@ -79,6 +79,16 @@ font-family: 'Open Sans';
     text-align: center;
 }
 
+#rightNav {
+    float:right;
+    margin-right: 100px;
+}
+
+#leftNav {
+    float:left;
+    margin-left: 100px;
+}
+
 .dog {
     line-height:50px;
     float:left;
@@ -146,3 +156,7 @@ h1.title {
 a:hover {
     color:#404040;
 } 
+
+tr.spaceUnder > td {
+  padding-bottom: 100px;
+}

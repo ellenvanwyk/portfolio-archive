@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-8"> 
+		<title> E L L E N  V A N  W Y K</title>
+		<link rel=stylesheet type="text/css" href="css/my_website.css" id="all"/>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="js/web.js"></script> 
+	</head>
+
+<body>
+<div id="nav">
+	<h1 class="title"><a href="index.html">E L L E N&nbsp;&nbsp;&nbsp;V A N&nbsp;&nbsp;&nbsp;W Y K </a></h1>
+	<div class="navbarElement">
+		<a class="navbarLink" href="about.html">About</a>
+		<div class="canvasContainer">
+			<canvas class="linkCanvas" width="130" height="130"></canvas>
+		</div>
+	</div>
+	<div class="navbarElement">
+		<a class="navbarLink" href="index.html">Work</a>
+		<div class="canvasContainer">
+			<canvas class="linkCanvas" width="130" height="130"></canvas>
+		</div>
+	</div>
+	<div class="navbarElement">
+		<a class="navbarLink" href="contact.html">Contact</a>
+		<div class="canvasContainer">
+			<canvas class="linkCanvas" width="130" height="130"></canvas>
+		</div>
+	</div>
+</div>
+
+<script>
+$( document ).ready(function() {
+	$(".navbarLink").mouseenter(function() {
+		var canvas = $(this).next(".canvasContainer").children("canvas")[0];
+		var web = new Web(canvas.width, canvas.height, 150, 0.1, 0.2, 0.097);
+		var renderer = new WebRenderer(web, canvas);
+		var interval = setInterval(function() {
+			web.expand();
+			renderer.render();
+		}, 50);
+		$(this).mouseleave(function() {
+			clearInterval(interval);
+			renderer.clearCanvas();
+		});
+	});
+});
+
+</script>
+<div id = "rightNav">
+	<finePrint><a href = "beatWave.html">Beat Wave</a></finePrint>
+</div>
+<div id = "leftNav">
+	<finePrint><a href = "sharacter.html">Sharacter</a></finePrint>
+</div>
+
+<div class = "about">
+	<div class="aboutInner">
+		<p> A collection of my scientific and editorial illustrations from my time in the University of Washington Scientific Illustration Certificate Program and as Art Director for the undergraduate neuroscience journal Grey Matters that I helped found.</p>
+		 <table style="width:100%">
+		  <tr class="spaceUnder">
+		    <td><img src = "https://ejvw.files.wordpress.com/2014/04/brain_small.png" alt = "human brain"style="width:250px;height:auto"></td>
+		    <td><img src = "https://ejvw.files.wordpress.com/2014/04/apple_shell.jpg" alt = "apple snail shell"style="width:250px;height:auto"></td>
+		    <td><img src = "https://ejvw.files.wordpress.com/2014/04/shell.jpg" alt = "shell"style="width:250px;height:auto"></td>
+		  </tr>
+		  <tr class="spaceUnder">
+		    <td><img src = "https://ejvw.files.wordpress.com/2014/05/chicken_skull.png" alt = "chicken skull"style="width:250px;height:auto"></td>
+		    <td><img src = "https://ejvw.files.wordpress.com/2014/04/skunkskull.png" alt = "skunk skull"style="width:250px;height:auto"></td>
+		    <td><img src = "https://ejvw.files.wordpress.com/2014/04/flavosellata-copy-copy.jpg" alt = "flavosellata"style="width:250px;height:auto"></td>
+		  </tr>
+		  <tr class="spaceUnder">
+		    <td><img src = "https://ejvw.files.wordpress.com/2014/04/screen-shot-2014-04-14-at-8-18-14-pm.png" alt = "circadian rhythms"style="width:250px;height:auto"></td>
+		    <td><img src = "https://ejvw.files.wordpress.com/2014/04/smile_muscles.jpg" alt = "smile muscles"style="width:250px;height:auto"></td>
+		    <td><img src = "https://ejvw.files.wordpress.com/2014/04/screen-shot-2014-04-14-at-8-18-55-pm.png" alt = "prosopagnosia"style="width:200px;height:auto"></td>
+		  </tr>
+</table> 
+	</div>
+</div>
+
+
+
+</body>
+</html>
