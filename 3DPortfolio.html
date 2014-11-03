@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-8"> 
+		<title> E L L E N  V A N  W Y K</title>
+		<link rel=stylesheet type="text/css" href="css/my_website.css" id="all"/>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="js/web.js"></script> 
+	</head>
+
+<body>
+<div id="nav">
+	<h1 class="title"><a href="index.html">E L L E N&nbsp;&nbsp;&nbsp;V A N&nbsp;&nbsp;&nbsp;W Y K </a></h1>
+	<div class="navbarElement">
+		<a class="navbarLink" href="about.html">About</a>
+		<div class="canvasContainer">
+			<canvas class="linkCanvas" width="130" height="130"></canvas>
+		</div>
+	</div>
+	<div class="navbarElement">
+		<a class="navbarLink" href="index.html">Work</a>
+		<div class="canvasContainer">
+			<canvas class="linkCanvas" width="130" height="130"></canvas>
+		</div>
+	</div>
+	<div class="navbarElement">
+		<a class="navbarLink" href="contact.html">Contact</a>
+		<div class="canvasContainer">
+			<canvas class="linkCanvas" width="130" height="130"></canvas>
+		</div>
+	</div>
+</div>
+
+<script>
+$( document ).ready(function() {
+	$(".navbarLink").mouseenter(function() {
+		var canvas = $(this).next(".canvasContainer").children("canvas")[0];
+		var web = new Web(canvas.width, canvas.height, 150, 0.1, 0.2, 0.097);
+		var renderer = new WebRenderer(web, canvas);
+		var interval = setInterval(function() {
+			web.expand();
+			renderer.render();
+		}, 50);
+		$(this).mouseleave(function() {
+			clearInterval(interval);
+			renderer.clearCanvas();
+		});
+	});
+});
+</script>
+
+
+<div class = "about">
+	<div class="aboutInner">
+		<h2>3D Portfolio</h2>
+		<h3>Animation Capstone</h3>
+		<p>During the 2012-2013 school year, I participated in the University of Washington Computer Science Department's Animation Capstone.  During the first quarter, we worked on independent projects to gain exposure to the basics of the animation pipeline in Autodesk Maya.</p>
+		 <EMBED SRC="images/mouse.mov"  WIDTH=600 HEIGHT = 380 CONTROLLER=true LOOP=false PLUGINSPAGE=http://www.apple.com/quicktime/">
+		<figcaption><span>A short I animated, rigged, lit, and composited myself</span></figcaption>
+	</div>
+</div>
+
+
+
+</body>
+</html>

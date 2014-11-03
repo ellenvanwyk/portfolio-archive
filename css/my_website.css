@@ -3,23 +3,37 @@
 @import url('http://fonts.googleapis.com/css?family=Karla:400italic,800italic,400,800');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300');
 
-H1, H2, H3 {text-align:left; 
+H1, H2, H3 {text-align:center; 
     color:#404040; 
     font-family: 'Amatic SC', sans-serif;
     font-size: 200%;} 
+
 H1 {font-size: 250%;}
 
 H3 {font-family: 'Open Sans';
     font-weight: 300;
     font-size: 125%;}
-p {font-family: 'Open Sans';
+
+p, finePrint {font-family: 'Open Sans';
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     }
+
+finePrint {
+    color:#404040; 
+    font-size: 12px;
+    text-align: center;
+}    
 
 span {font-family: 'Open Sans';
     font-weight: 300;
-    font-size: 100%}
+    font-size: 14px}
+
+#footer {
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
 
 
 body {
@@ -53,7 +67,7 @@ font-family: 'Open Sans';
 }
 
 .dog {
-    line-height:100px;
+    line-height:50px;
     float:left;
     padding:10px;
     text-align: center;
@@ -64,6 +78,7 @@ font-family: 'Open Sans';
     max-width: 1020px;
     margin-left: auto;
     margin-right: auto;
+    height: 340px;
 }
 
 
@@ -114,3 +129,7 @@ h1.title {
     float: left;
     z-index: 10;
 }
+
+a:hover {
+    color:#404040;
+} 
