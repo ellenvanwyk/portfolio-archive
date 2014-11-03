@@ -122,10 +122,14 @@ a {
     text-decoration:none;
 }
 
-a:link    {color:#404040;}  /* unvisited link  */
-a:visited {color:#404040;}  /* visited link    */
-a:hover   {color:#404040;}  /* mouse over link */
-a:active  {color:#404040;}  /* selected link   */ 
+p a:visited{color:#6ACC76;}
+p a:link{color:#6ACC76;}
+
+
+a:link    {color:#404040;}  
+a:visited {color:#404040;}  
+a:hover   {color:#404040;}  
+a:active  {color:#404040;} 
 
 
  /* unique title formatting for nav bar */
