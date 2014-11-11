@@ -21,6 +21,8 @@ p, td, finePrint {font-family: 'Open Sans';
     }
 td{
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #contact{

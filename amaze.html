@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-8"> 
+		<title> E L L E N  V A N  W Y K</title>
+		<link rel=stylesheet type="text/css" href="css/my_website.css" id="all"/>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="js/web.js"></script> 
+	</head>
+
+<body>
+<div id="nav">
+	<h1 class="title"><a href="index.html">E L L E N&nbsp;&nbsp;&nbsp;V A N&nbsp;&nbsp;&nbsp;W Y K </a></h1>
+	<div class="navbarElement">
+		<a class="navbarLink" href="about.html">About</a>
+		<div class="canvasContainer">
+			<canvas class="linkCanvas" width="130" height="130"></canvas>
+		</div>
+	</div>
+	<div class="navbarElement">
+		<a class="navbarLink" href="index.html">Work</a>
+		<div class="canvasContainer">
+			<canvas class="linkCanvas" width="130" height="130"></canvas>
+		</div>
+	</div>
+	<div class="navbarElement">
+		<a class="navbarLink" href="contact.html">Contact</a>
+		<div class="canvasContainer">
+			<canvas class="linkCanvas" width="130" height="130"></canvas>
+		</div>
+	</div>
+</div>
+
+<script>
+$( document ).ready(function() {
+	$(".navbarLink").mouseenter(function() {
+		var canvas = $(this).next(".canvasContainer").children("canvas")[0];
+		var web = new Web(canvas.width, canvas.height, 150, 0.1, 0.2, 0.097);
+		var renderer = new WebRenderer(web, canvas);
+		var interval = setInterval(function() {
+			web.expand();
+			renderer.render();
+		}, 50);
+		$(this).mouseleave(function() {
+			clearInterval(interval);
+			renderer.clearCanvas();
+		});
+	});
+});
+
+
+</script>
+<div id = "leftNav">
+	<finePrint><a href = "3DPortfolio.html">3D Portfolio</a></finePrint>
+</div>
+<div id = "rightNav">
+	<finePrint><a href = "illustration.html">Illlustration Portfolio</a></finePrint>
+</div>
+
+
+<div class = "about">
+	<div class="aboutInner">
+		<h2>Sharacter</h2>
+		<img src= "https://ejvw.files.wordpress.com/2014/10/logo.png" alt = "sharacter" style="width:200px;height:auto" class = "displayed">
+
+
+		<p>Sharacter is an iOS app game based on the French Surrealist Parlor game 'Exquisite Corpse'.  <a href = "http://www.linkedin.com/in/antonholmberg">Anton Holmberg</a> is developing the app and I am designing the graphics and interaction as a personal project.  You can view a <a href = "http://invis.io/3A1O324BC">prototype</a> in Invision.</p>
+		<h3>Inspiration</h3>
+		<p>I worked at an art camp for children in the Summer of 2014, and one of our projects was "Exquisite Corpse".  To play the game, participants take turns drawing parts of a creature on a piece of paper folded so they can't see the others' work.  When the creature is unfolded, it is usually absurd and hilarity ensues.  Anton saw an opportunity to turn this into a mobile app, and since we couldn't find a satasfactory digital version of the game (and I wanted to play it), I agreed.</p>
+		<h3>Look and Feel</h3>
+		<p>We decided early on to make the game fun and to let real world implementation of Exquisite Corpse influence its design.  I designed folding animations and graphics with pencil sketch feel to keep the game light and playful.</p>
+		<h3>User Interface</h3>
+		<p>We prioritized simplicity and charm in our interface design and tried to experess both in our game setup and drawing inferface.  To do this, we used a conversational onboarding experience.  I also designed a new color picking UI that would minimize space usage and leverage the beauty and shape of the color wheel.  The user grabs and spins the wheel to choose the hue and slides the circle along the radius to choose the saturation.  The luminosity lies along the circumferance.  Users have found this color picking interface intuitive and charming.</p>
+
+		<!--<img src= "https://ejvw.files.wordpress.com/2014/10/logo.png" alt = "sharacter" style="width:200px;height:auto" >
+		<figcaption><span>Sharacter</span></figcaption>-->
+		<div class = "dogOuter">
+			<table align="center">
+				  <tr>
+				    <td><img src= "images/games.png" alt = "sharacter" style="width:220px;height:auto">
+					<figcaption><span>Gallery of drawings</span></figcaption></td>
+				    <td><img src= "images/drawingui.png" alt = "sharacter" style="width:220px;height:auto">
+					<figcaption><span>Drawing UI</span></figcaption></td>
+				    <td><img src= "images/filled_game_design.png" alt = "sharacter" style="width:220px;height:auto">
+					<figcaption><span>Game Creation UI</span></figcaption></td>
+				  </tr>
+
+			</table> 
+		</div>
+		<br>
+		<h3>Results</h3>
+		<p>The app is live for developers.  Here are some drawings produced by test users.</p>
+		<img src= "images/sharacter_drawings.png" class = "displayed" alt = "sharacter" style="width:600px;height:auto">
+
+	</div>
+</div>
+
+
+
+</body>
+</html>
