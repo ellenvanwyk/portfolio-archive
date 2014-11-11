@@ -14,11 +14,14 @@ H3 {font-family: 'Open Sans';
     font-weight: 300;
     font-size: 125%;}
 
-p, finePrint {font-family: 'Open Sans';
+p, td, finePrint {font-family: 'Open Sans';
     text-align: left;
     font-size: 16px;
     color: #404040;
     }
+td{
+    text-align: center;
+}
 
 #contact{
     text-align: center;
