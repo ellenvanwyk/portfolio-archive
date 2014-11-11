@@ -108,6 +108,7 @@ font-family: 'Open Sans';
     margin-left: auto;
     margin-right: auto;
     height: 340px;
+    margin-bottom: 80px;
 }
 
 
@@ -116,12 +117,13 @@ font-family: 'Open Sans';
     background-color:#FFFFFF;
     height:200px;
     width:100%;
+    margin-bottom: 80px;
 }
 
 .aboutInner {
     width: 60%;
     margin: 0 auto;
-
+     margin-bottom: 80px;
 }
 
 a {
