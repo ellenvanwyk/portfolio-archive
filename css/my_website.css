@@ -77,6 +77,11 @@ font-family: 'Open Sans';
     margin-left: auto;
     margin-right: auto }
 
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
 #nav {
     display: table;
     line-height:50px;
