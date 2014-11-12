@@ -61,38 +61,17 @@ $( document ).ready(function() {
 
 <div class = "about">
 	<div class="aboutInner">
-		<h2>Sharacter</h2>
-		<img src= "https://ejvw.files.wordpress.com/2014/10/logo.png" alt = "sharacter" style="width:200px;height:auto" class = "displayed">
+		<h2>Amaze</h2>
+		<img src= "images/ice.png" alt = "ice" style="width:200px;height:auto" class = "displayed">
 
-
-		<p>Sharacter is an iOS app game based on the French Surrealist Parlor game 'Exquisite Corpse'.  <a href = "http://www.linkedin.com/in/antonholmberg">Anton Holmberg</a> is developing the app and I am designing the graphics and interaction as a personal project.  You can view a <a href = "http://invis.io/3A1O324BC">prototype</a> in Invision.</p>
-		<h3>Inspiration</h3>
-		<p>I worked at an art camp for children in the Summer of 2014, and one of our projects was "Exquisite Corpse".  To play the game, participants take turns drawing parts of a creature on a piece of paper folded so they can't see the others' work.  When the creature is unfolded, it is usually absurd and hilarity ensues.  Anton saw an opportunity to turn this into a mobile app, and since we couldn't find a satasfactory digital version of the game (and I wanted to play it), I agreed.</p>
+		<p>Amaze is a single player puzzle game for iOS where the player who creates the most complicated maze wins.  Anton Holmberg and I made it for the 2014 UC Berkeley UPE Game Jam, where it won 3rd place.  I designed the interface and graphics and Anton coded the game in Xcode using Objective C.  </p>
+		 <EMBED src="images/game.mov"  width=500 height = 800 align="center" controller=true LOOP=false pluginspage="http://www.apple.com/quicktime/" class = "displayed"><figcaption><span>A screencast of sample gameplay.  I am designing a maze for the computer (blue character) and the AI builds a maze for my magenta character when I hit run.</span></figcaption>
+		<h3>Constraints</h3>
+		<p>We had 22 hours to make the game (actually less, becuase we both wanted to sleep), so we tried to identify the essential gameplay features and make the most of the simplicity using graphics. We wanted to make a 3D game, but realized that aerial view mazes were fundamentally 2D games.  This limited my design to flat png tiles, where the object had to fill the corners of the square to prevent gaps between diagonal blocks.  I also had to make an animation that could loop several times.<p>
 		<h3>Look and Feel</h3>
-		<p>We decided early on to make the game fun and to let real world implementation of Exquisite Corpse influence its design.  I designed folding animations and graphics with pencil sketch feel to keep the game light and playful.</p>
-		<h3>User Interface</h3>
-		<p>We prioritized simplicity and charm in our interface design and tried to experess both in our game setup and drawing inferface.  To do this, we used a conversational onboarding experience.  I also designed a new color picking UI that would minimize space usage and leverage the beauty and shape of the color wheel.  The user grabs and spins the wheel to choose the hue and slides the circle along the radius to choose the saturation.  The luminosity lies along the circumferance.  Users have found this color picking interface intuitive and charming.</p>
-
-		<!--<img src= "https://ejvw.files.wordpress.com/2014/10/logo.png" alt = "sharacter" style="width:200px;height:auto" >
-		<figcaption><span>Sharacter</span></figcaption>-->
-		<div class = "dogOuter">
-			<table align="center">
-				  <tr>
-				    <td><img src= "images/games.png" alt = "sharacter" style="width:220px;height:auto">
-					<figcaption><span>Gallery of drawings</span></figcaption></td>
-				    <td><img src= "images/drawingui.png" alt = "sharacter" style="width:220px;height:auto">
-					<figcaption><span>Drawing UI</span></figcaption></td>
-				    <td><img src= "images/filled_game_design.png" alt = "sharacter" style="width:220px;height:auto">
-					<figcaption><span>Game Creation UI</span></figcaption></td>
-				  </tr>
-
-			</table> 
-		</div>
-		<br>
-		<h3>Results</h3>
-		<p>The app is live for developers.  Here are some drawings produced by test users.</p>
-		<img src= "images/sharacter_drawings.png" class = "displayed" alt = "sharacter" style="width:600px;height:auto">
-
+		<p>  I hadn't designed for abstract 2D games before, so I spent time collecting reference.  The game has 3 elements to construct the maze: stationary blocks, moveable blocks, and blocks that slow the player down when it passes.  We decided to use the metaphor of bush, rock, and ice block for these items respectively, though I realize some may perceive bushes to be more moveable than blocks.  To unify the look and feel, I chose to make all the components saccharine, magical, and cartoonish.</p>
+		<h3>Story</h3>
+		<p>Originally, the game involved two separate mazes with different finish lines.  I wanted to bring the excitement of a racing game, so we decided to have animated characters that would reach the same spot.  </p>
 	</div>
 </div>
 
