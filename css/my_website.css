@@ -3,18 +3,29 @@
 @import url('http://fonts.googleapis.com/css?family=Karla:400italic,800italic,400,800');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300');
 
-H1, H2, H3 {text-align:center; 
+H1, H2, H3 {
+    text-align:center; 
     color:#404040; 
     font-family: 'Amatic SC', sans-serif;
     font-size: 200%;} 
 
-H1 {font-size: 250%;}
+H1 {font-size: 250%;
+    letter-spacing: 5px;}
 
 H3 {font-family: 'Open Sans';
     font-weight: 300;
     font-size: 125%;}
 
-p, td, finePrint {font-family: 'Open Sans';
+H4 {font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 75%;  
+    color:#999999;
+    padding-bottom: 2cm;
+    letter-spacing: 3px;
+}
+
+p, td, finePrint {
+    font-family: 'Open Sans';
     text-align: left;
     font-size: 16px;
     color: #404040;
@@ -84,7 +95,7 @@ font-family: 'Open Sans';
 
 #nav {
     display: table;
-    line-height:50px;
+    line-height:20px;
     background-color:#FFFFFF;
     height:175px;
     margin-left: auto;
