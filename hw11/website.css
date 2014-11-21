@@ -1,0 +1,18 @@
+.dog {
+    line-height:50px;
+    float:left;
+    padding:10px;
+    text-align: center;
+}
+
+
+.dogOuter{
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    margin-bottom: 80px;
+}
+
+body {
+	background-color: #CCCCFF
+}
