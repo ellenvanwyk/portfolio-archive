@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-8"> 
+		<title>Ellen Van Wyk's Portfolio</title>
+		<link rel=stylesheet type="text/css" href="css/my_website.css" id="all"/>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="js/web.js"></script> 
+	</head>
+
+<body>
+<div id="nav">
+	<h1 class="title"><a href="index.html">ELLEN VAN WYK</a></h1>
+	<div class="navbarElement">
+		<a class="navbarLink" href="about.html">About</a>
+		<div class="canvasContainer">
+			<canvas class="linkCanvas" width="130" height="130"></canvas>
+		</div>
+	</div>
+	<div class="navbarElement">
+		<a class="navbarLink" href="work.html">Work</a>
+		<div class="canvasContainer">
+			<canvas class="linkCanvas" width="130" height="130"></canvas>
+		</div>
+	</div>
+	<div class="navbarElement">
+		<a class="navbarLink" href="contact.html">Contact</a>
+		<div class="canvasContainer">
+			<canvas class="linkCanvas" width="130" height="130"></canvas>
+		</div>
+	</div>
+</div>
+
+<script>
+$( document ).ready(function() {
+	$(".navbarLink").mouseenter(function() {
+		var canvas = $(this).next(".canvasContainer").children("canvas")[0];
+		var web = new Web(canvas.width, canvas.height, 150, 0.1, 0.2, 0.097);
+		var renderer = new WebRenderer(web, canvas);
+		var interval = setInterval(function() {
+			web.expand();
+			renderer.render();
+		}, 50);
+		$(this).mouseleave(function() {
+			clearInterval(interval);
+			renderer.clearCanvas();
+		});
+	});
+});
+
+</script>
+<!--
+<div id="about">
+	<img src= "https://ejvw.files.wordpress.com/2014/09/portrait2.jpg" alt = "portrait" style="width:130px;height:auto">
+		<h2>  About
+		</h2>
+		<p style= "line-height:20px;font-family:courier"> Ellen Van Wyk studies HCI at the UC Berkeley School of Information.  Her backgrounds in Neurobiogy, scientific illustration, and 3D animation inform her understanding of experience and drive her interaction design
+		</p>
+
+		<ul style="list-style-type:none;font-family:courier;line-height:30px">
+			<li>Design</li>
+	  		<li>Science</li>
+	  		<li>Illustration</li>
+	  		<li><a href="http://greymattersjournal.com/">Science Communication</a> </li>
+		</ul> 
+
+</div>
+-->
+<div class = "dogOuter">
+	<div class="dog">
+		<figure>
+			<a href="sharacter.html">
+				<img src= "https://ejvw.files.wordpress.com/2014/10/logo.png" alt = "sharacter" style="width:200px;height:auto" >
+				<figcaption><span>Sharacter</span></figcaption>
+			</a>
+		</figure>
+	</div>
+
+
+	<div class="dog">
+		<figure>
+			<a href="illustration.html">
+				<img src= "https://ejvw.files.wordpress.com/2014/04/brain_small.png" alt = "illustration" style="width:300px;height:auto">
+				<figcaption><span>Illustration Portfolio</span></figcaption>
+			</a>
+		</figure>
+	</div>
+
+
+	<div class="dog">
+		<figure>
+			<a href="beatWave.html">
+				<img src= "https://ejvw.files.wordpress.com/2014/10/squares.jpg" alt = "Leap Motion DJ Project" style="width:200px;height:auto">
+				<figcaption><span>Leap Motion DJ App Project</span></figcaption>
+			</a>
+		</figure>
+	</div>
+</div>
+
+
+<div class = "dogOuter">
+	<div class="dog">
+		<figure>
+			<a href="animationResearch.html">
+				<img src= "images/face.png" alt = "Animation Research" style="width:200px;height:auto" >
+				<figcaption><span>Animation Research</span></figcaption>
+			</a>
+		</figure>
+	</div>
+
+
+	<div class="dog">
+		<figure>
+			<a href="3DPortfolio.html">
+				<img src= "images/vanwyk_ellen_hand.png" alt = "illustration" style="width:300px;height:auto" >
+				<figcaption><span>3D Portfolio</span></figcaption>
+			</a>
+		</figure>
+	</div>
+
+	<div class="dog">
+		<figure>
+			<a href="amaze.html">
+				<img src= "images/ice.png" alt = "illustration" style="width:205px;height:auto" >
+				<figcaption><span>Amaze Game</span></figcaption>
+			</a>
+		</figure>
+	</div>
+
+
+</div>
+
+
+
+
+<div id = "footer">
+	<finePrint>CSS, HTML, and design by Ellen</a></finePrint>
+</div>
+
+</body>
+</html>

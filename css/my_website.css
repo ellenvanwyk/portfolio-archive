@@ -30,10 +30,15 @@ p, td, finePrint {
     font-size: 16px;
     color: #404040;
     }
+
 td{
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+#index{
+    text-align: center;
 }
 
 #contact{
