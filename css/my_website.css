@@ -144,8 +144,14 @@ font-family: 'Open Sans';
 }
 
 .aboutInner {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
+     margin-bottom: 80px;
+}
+
+#inLineImg{
+    max-width: 70%;
+        margin: 0 auto;
      margin-bottom: 80px;
 }
 
