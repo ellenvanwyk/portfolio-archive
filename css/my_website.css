@@ -70,12 +70,17 @@ body {
  /* navigation bar at top of each page */
 
 .navbarLink {
-font-family: 'Open Sans';
+	font-family: 'Open Sans';
     font-weight: 300;
     font-size: 15pt;
     color: black;
     margin-left: 18px;
     margin-right: 18px;
+    color: #B3B3B3 !important;
+}
+
+.selected {
+	color: #404040 !important;
 }
 
 .textLink {
