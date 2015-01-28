@@ -49,11 +49,13 @@ finePrint {
     color:#404040; 
     font-size: 12px;
     text-align: center;
+    color: #A1A1A1 !important;
 }    
 
 span {font-family: 'Open Sans';
     font-weight: 300;
-    font-size: 14px}
+    font-size: 14px;
+    color:#A1A1A1;}
 
 #footer {
     bottom: 10px;
@@ -76,7 +78,7 @@ body {
     color: black;
     margin-left: 18px;
     margin-right: 18px;
-    color: #B3B3B3 !important;
+    color: #A1A1A1 !important;
 }
 
 .selected {
