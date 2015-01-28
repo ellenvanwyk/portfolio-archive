@@ -52,6 +52,10 @@ finePrint {
     color: #A1A1A1 !important;
 }    
 
+.lRNavigation {
+	color: #A1A1A1 !important;
+}
+
 span {font-family: 'Open Sans';
     font-weight: 300;
     font-size: 14px;
@@ -119,11 +123,13 @@ font-family: 'Open Sans';
 #rightNav {
     float:right;
     margin-right: 100px;
+    padding-top: 35px;
 }
 
 #leftNav {
     float:left;
     margin-left: 100px;
+    padding-top: 35px;
 }
 
 .dog {
