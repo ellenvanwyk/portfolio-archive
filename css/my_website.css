@@ -9,8 +9,8 @@ H1, H2, H3 {
     font-family: 'Amatic SC', sans-serif;
     font-size: 200%;} 
 
-H1 {font-size: 250%;
-    letter-spacing: 5px;}
+H1 {font-size: 254%;
+    letter-spacing: 7px;}
 
 H3 {font-family: 'Open Sans';
     font-weight: 300;
@@ -74,8 +74,8 @@ font-family: 'Open Sans';
     font-weight: 300;
     font-size: 15pt;
     color: black;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: 18px;
+    margin-right: 18px;
 }
 
 .textLink {
@@ -100,7 +100,7 @@ font-family: 'Open Sans';
 
 #nav {
     display: table;
-    line-height:35px;
+    line-height:46px;
     background-color:#FFFFFF;
     height:175px;
     margin-left: auto;
@@ -132,7 +132,7 @@ font-family: 'Open Sans';
     margin-left: auto;
     margin-right: auto;
     height: 340px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 
