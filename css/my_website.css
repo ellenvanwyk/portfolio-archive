@@ -29,6 +29,7 @@ p, td, finePrint {
     text-align: left;
     font-size: 16px;
     color: #404040;
+    line-height: 170%;
     }
 
 td{
@@ -59,7 +60,9 @@ finePrint {
 span {font-family: 'Open Sans';
     font-weight: 300;
     font-size: 14px;
-    color:#A1A1A1;}
+    color:#A1A1A1;
+    line-height: 40%;
+}
 
 #footer {
     bottom: 10px;
