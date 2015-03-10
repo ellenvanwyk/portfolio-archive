@@ -14,7 +14,7 @@ H1 {font-size: 254%;
 
 H3 {font-family: 'Open Sans';
     font-weight: 300;
-    font-size: 125%;}
+    font-size: 160%;}
 
 H4 {font-family: 'Open Sans';
     font-weight: 300;
@@ -27,7 +27,7 @@ H4 {font-family: 'Open Sans';
 p, td, finePrint {
     font-family: 'Open Sans';
     text-align: left;
-    font-size: 16px;
+    font-size: 18px;
     color: #404040;
     line-height: 170%;
     }
