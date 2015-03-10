@@ -7,6 +7,34 @@
 		<link rel=stylesheet type="text/css" href="css/my_website.css" id="all"/>
 		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="js/web.js"></script> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script >
+		$(function () { 
+    $('#container').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Fruit Consumption'
+        },
+        xAxis: {
+            categories: ['Apples', 'Bananas', 'Oranges']
+        },
+        yAxis: {
+            title: {
+                text: 'Fruit eaten'
+            }
+        },
+        series: [{
+            name: 'Jane',
+            data: [1, 0, 4]
+        }, {
+            name: 'John',
+            data: [5, 7, 3]
+        }]
+    });
+});</script>
 	</head>
 
 <body>
@@ -90,8 +118,7 @@ $( document ).ready(function() {
 	<div class="dog">
 		<figure>
 			<a href="3DPortfolio.html">
-				<img src= "images/vanwyk_ellen_hand.png" alt = "illustration" style="width:260px;height:auto" >
-				<figcaption><span>3D Portfolio</span></figcaption>
+				<div id="container" style="width:100%; height:400px;"></div>
 			</a>
 		</figure>
 	</div>
