@@ -56,7 +56,7 @@ $( document ).ready(function() {
 	<finePrint ><a href = "beatWave.html" class = "lRNavigation">Beat Wave</a></finePrint>
 </div>
 <div id = "rightNav">
-	<finePrint ><a href = "illustration.html" class = "lRNavigation">Illlustration Portfolio</a></finePrint>
+	<finePrint ><a href = "amazon.html" class = "lRNavigation">Amazon.com Internship</a></finePrint>
 </div>
 
 
@@ -65,21 +65,31 @@ $( document ).ready(function() {
 		<h2>Sharacter: an iOS Drawing Game</h2>
 		<img src= "images/sharacterLogo.png" alt = "sharacter" style="width:200px;height:auto" class = "displayed">
 
+				
+				<p>Sharacter is a collaborative iOS app game based on the French Surrealist Parlor game 'Exquisite Corpse'.  <a href = "http://www.linkedin.com/in/antonholmberg">Anton Holmberg</a> is developing the app and I am designing the graphics and interaction as a personal project.</p>
+				<h3>Overview</h3>
 
-		<p>Sharacter is an iOS app game based on the French Surrealist Parlor game 'Exquisite Corpse'.  <a href = "http://www.linkedin.com/in/antonholmberg">Anton Holmberg</a> is developing the app and I am designing the graphics and interaction as a personal project.</p>
-		<h3>Inspiration</h3>
-		<p>I worked at an art camp for children in the Summer of 2014, and one of our projects was "Exquisite Corpse".  To play the game, participants take turns drawing parts of a creature on a piece of paper folded so they can't see the others' work.  When the creature is unfolded, it is usually absurd and hilarity ensues.  Anton saw an opportunity to turn this into a mobile app.</p>
-		<h3>Look and Feel</h3>
+
+				<h4 >Problem:</h4><p class = "parP"> We wanted an accessible, easy to use, collaborative drawing game that would facilitate creativity and help people connect with distant friends and family.</h4 >
+				<h4  >Action:</h4><p class = "parP">I conducted competitive research, both identifying an opportunity in the market and finding mobile game designs and drawing UIs for reference. I synthesized this information into a design</h4 >
+				<h4 >Result:</h4><p class = "parP">Sharacter is a work in progress, but so far our test users have expressed the desire to play with their friends, and have produced the drawings shown <a href = "#drawings" > here</a></h4 >
+
+
+		<h3>Case Study</h3>
+		<h4>Inspiration</h4>
+		<p>I worked at an art camp for children in the Summer of 2014, and one of our projects was "Exquisite Corpse".  To play the game, participants take turns drawing parts of a creature on a piece of paper folded so they can't see the others' work.  When the creature is unfolded, it is usually absurd and hilarity ensues.  Anton saw an opportunity to turn this into a mobile app, and we couldn't find any satasfactory alternatives on the market already.</p>
+		<h4>Look and Feel</h4>
 		<p>We decided early on to make the game fun and to let real world implementation of Exquisite Corpse influence its design.  I designed folding animations and graphics with pencil sketch feel to keep the game light and playful.</p>
-		<h3>Game Setup</h3>
+		<h4>Game Setup</h4>
 		<p>We prioritized simplicity and charm in our interface design and tried to experess both in our game setup and drawing inferface.  To do this, we used a conversational onboarding experience.  We also chose to use a gallery to represent finished and in progress drawings.  We started by researching other shared games and found that a menu was widely used.  We used this in early versions until a friend mentioned that a gallery a la Pinterest would be more suitable.  After realizing that a 3 column gallery would save space horizontally, focus on the drawing rather than the set up, and reference the physical act of posting art we implemented it.</p>
-		<h3>Drawing UI</h3>
-		<p>We started with a color picking UI where the luminosity, saturation, transparency, and hue were represented as separate controls on a dfferent screen.  I saw an opportunity to minimize space usage and leverage the beauty and shape of the color wheel.  When selected from the bottom menu, half of the color wheel appears.  The user grabs and spins the wheel to choose the hue and slides the circle along the radius to choose the saturation.  The luminosity lies along the circumferance.  We are collecting user feedback on this design and will continue to iterate to improve its usability.</p>
+		<h4>Drawing UI</h4>
+		<p>We have experimented with multiple color picking interfaces. Through informal user testing, we determined that the original UI (shown below) confused users, especially those with limited mobile gaming experience. We are exploring more options for the color picker UI, and looking into expanding its function with saveable swatches while also effectively communicating how to use a 3-dimensional color picker.</p>
 		</div>
 		<!--<img src= "https://ejvw.files.wordpress.com/2014/10/logo.png" alt = "sharacter" style="width:200px;height:auto" >
 		<figcaption><span>Sharacter</span></figcaption>-->
-		<div class = "dogOuter">
-			<table align="center">
+		<div class = "tableInner" height = "500px">
+			<div class = "drawingsTable">
+				<table  >
 					  <tr>
 					    <td><img src= "images/games_2.PNG" alt = "sharacter" style="width:auto;height:400px">
 						<figcaption><span>Gallery of drawings</span></figcaption></td>
@@ -88,14 +98,13 @@ $( document ).ready(function() {
 					    <td><img src= "images/filled_game_design.png" alt = "sharacter" style="width:auto;height:400px">
 						<figcaption><span>Game Creation UI</span></figcaption></td>
 					  </tr>
-
-			</table> 
+				</table> 
+			</div>
 		</div>
-		<br>
-		<div class="aboutInner">
-		<h3>Results</h3>
-		<p>The app is live for developers.  Here are some drawings produced by test users.</p>
-		<img src= "images/sharacter_drawings.png" class = "displayed" alt = "sharacter" style="width:600px;height:auto">
+		<div class="aboutInner" style = "clear:both">
+		<h4>Results</h4>
+		<p>The app is live for developers.  Here are some drawings produced by test users. <a NAME="drawings"></p>
+		<img src= "images/sharacter_drawings.png" class = "displayed" alt = "sharacter" style="width:600px;height:auto" >
 		</div>
 	
 </div>

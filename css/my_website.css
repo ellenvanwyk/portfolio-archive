@@ -14,22 +14,30 @@ H1 {font-size: 254%;
 
 H3 {font-family: 'Open Sans';
     font-weight: 300;
-    font-size: 160%;}
-
-H4 {font-family: 'Open Sans';
-    font-weight: 300;
-    font-size: 75%;  
-    color:#999999;
-    padding-bottom: 2cm;
-    letter-spacing: 3px;
+    font-size: 160%;
+    margin-top: 60px;
 }
 
-p, td, finePrint {
+H4 {font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: .92em;  
+    color:#404040;
+    margin:0;
+}
+li{
+    margin-bottom: 10px;
+}
+
+p{
+    margin-bottom: 30px;
+}
+
+p, td, finePrint, li {
     font-family: 'Open Sans';
     text-align: left;
-    font-size: 18px;
+    font-size: .92em;
     color: #404040;
-    line-height: 170%;
+    line-height: 160%;
     }
 
 td{
@@ -54,7 +62,7 @@ finePrint {
 }    
 
 .lRNavigation {
-	color: #A1A1A1 !important;
+    color: #A1A1A1 !important;
 }
 
 span {font-family: 'Open Sans';
@@ -62,6 +70,7 @@ span {font-family: 'Open Sans';
     font-size: 14px;
     color:#A1A1A1;
     line-height: 40%;
+    margin-bottom: 
 }
 
 #footer {
@@ -79,7 +88,7 @@ body {
  /* navigation bar at top of each page */
 
 .navbarLink {
-	font-family: 'Open Sans';
+    font-family: 'Open Sans';
     font-weight: 300;
     font-size: 15pt;
     color: black;
@@ -89,7 +98,7 @@ body {
 }
 
 .selected {
-	color: #404040 !important;
+    color: #404040 !important;
 }
 
 .textLink {
@@ -102,10 +111,14 @@ font-family: 'Open Sans';
     text-align: center;
 }
 
- IMG.displayed {
+ img.displayed {
     display: block;
     margin-left: auto;
-    margin-right: auto }
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+}
 
 .displayed {
     display: block;
@@ -136,7 +149,7 @@ font-family: 'Open Sans';
 }
 
 .dog {
-    line-height:50px;
+    line-height:30px;
     float:left;
     padding:10px;
     text-align: center;
@@ -147,13 +160,13 @@ font-family: 'Open Sans';
     max-width: 1020px;
     margin-left: auto;
     margin-right: auto;
-    height: 340px;
-    margin-bottom: 40px;
+    height: 300px;
+    margin-bottom: 10px;
 }
 
 
 .about {
-    line-height:30px;
+    line-height:20px;
     background-color:#FFFFFF;
     height:200px;
     width:100%;
@@ -162,6 +175,12 @@ font-family: 'Open Sans';
 
 .aboutInner {
     width: 50%;
+    margin: 0 auto;
+     margin-bottom: 80px;
+}
+
+.tableInner {
+    width: 70%;
     margin: 0 auto;
      margin-bottom: 80px;
 }
@@ -218,3 +237,63 @@ a:hover {
 tr.spaceUnder > td {
   padding-bottom: 100px;
 }
+.bold{
+    font-weight:bold;
+}
+
+.drawingsTable{
+     margin: 0 auto;
+    width:765px;
+    height:100%;
+}
+
+.parDiv{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.parImg{
+    float:left;
+    margin:30px;
+    width:25%;
+    height: 100%;
+}
+
+.parText{
+    float:right;
+    margin:10px;
+    width:300px;
+    float:left;
+    height: 100%
+}
+
+.parP{
+    margin-bottom: 30px;
+}
+
+figcaption{
+    margin-bottom: 30px;
+}
+
+.listInner{
+    width:300px;
+    float:left;
+}
+
+.center{
+    text-align: center;
+}
+
+.workIcon{
+    width:230px;
+    height:auto;
+}
+
+.centeredDiv{
+    margin-left:auto; 
+    margin-right:auto;
+    width:300px;
+    text-align: center;
+}
+
