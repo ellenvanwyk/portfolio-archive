@@ -174,7 +174,6 @@ font-family: 'Open Sans';
 }
 
 .aboutInner {
-    width: 50%;
     margin: 0 auto;
      margin-bottom: 80px;
 }
@@ -295,5 +294,24 @@ figcaption{
     margin-right:auto;
     width:300px;
     text-align: center;
+}
+
+
+@media(max-width : 600px) {
+    .aboutInner{
+        width:90%;
+    }
+}
+
+@media(max-width : 900px) {
+    .aboutInner{
+        width:70%;
+    }
+}
+
+@media(min-width : 900px) {
+    .aboutInner{
+        width:50%;
+    }
 }
 
