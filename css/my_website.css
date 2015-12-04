@@ -299,7 +299,10 @@ figcaption{
 
 @media(max-width : 600px) {
     .aboutInner{
-        width:90%;
+        width:95%;
+    }
+    h2{
+        margin-top:160px;
     }
 }
 
