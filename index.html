@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Ellen Van Wyk's Portfolio</title>
 		<link rel=stylesheet type="text/css" href="css/my_website.css" id="all"/>
 		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -10,54 +11,133 @@
 	</head>
 
 <body>
-<div id="nav">
-	<h1 class="title"><a href="index.html">ELLEN VAN WYK</a></h1>
-	<div class="navbarElement">
-		<a class="navbarLink" href="about.html">About</a>
-		<div class="canvasContainer">
-			<canvas class="linkCanvas" width="130" height="130"></canvas>
-		</div>
-	</div>
-	<div class="navbarElement">
-		<a class="navbarLink" href="work.html">Work</a>
-		<div class="canvasContainer">
-			<canvas class="linkCanvas" width="130" height="130"></canvas>
-		</div>
-	</div>
-	<div class="navbarElement">
-		<a class="navbarLink" href="contact.html">Contact</a>
-		<div class="canvasContainer">
-			<canvas class="linkCanvas" width="130" height="130"></canvas>
-		</div>
-	</div>
-</div>
 
-<script>
-$( document ).ready(function() {
-	$(".navbarLink").mouseenter(function() {
-		var canvas = $(this).next(".canvasContainer").children("canvas")[0];
-		var web = new Web(canvas.width, canvas.height, 150, 0.1, 0.2, 0.097);
-		var renderer = new WebRenderer(web, canvas);
-		var interval = setInterval(function() {
-			web.expand();
-			renderer.render();
-		}, 50);
-		$(this).mouseleave(function() {
-			clearInterval(interval);
-			renderer.clearCanvas();
+<div id = "content">
+	<div id="nav">
+		<h1 class="title"><a href="index.html">ELLEN VAN WYK</a></h1>
+		<h6>&#8226;User Experience Designer&#8226;</h6>
+
+
+		<div class="navbarElement">
+			<a class="navbarLink" href="about.html">About</a>
+			<div class="canvasContainer">
+				<canvas class="linkCanvas" width="130" height="130"></canvas>
+			</div>
+		</div>
+		<div class="navbarElement">
+			<a class="navbarLink selected"href="index.html">Work</a>
+			<div class="canvasContainer">
+				<canvas class="linkCanvas" width="130" height="130"></canvas>
+			</div>
+		</div>
+		<div class="navbarElement">
+			<a class="navbarLink" href="contact.html">Contact</a>
+			<div class="canvasContainer">
+				<canvas class="linkCanvas" width="130" height="130"></canvas>
+			</div>
+		</div>
+	</div>
+
+	<script>
+	$( document ).ready(function() {
+		$(".navbarLink").mouseenter(function() {
+			var canvas = $(this).next(".canvasContainer").children("canvas")[0];
+			var web = new Web(canvas.width, canvas.height, 150, 0.1, 0.2, 0.097);
+			var renderer = new WebRenderer(web, canvas);
+			var interval = setInterval(function() {
+				web.expand();
+				renderer.render();
+			}, 50);
+			$(this).mouseleave(function() {
+				clearInterval(interval);
+				renderer.clearCanvas();
+			});
 		});
 	});
-});
 
-</script>
+	</script>
+		<div id = "borderline"></div>
+		<div class = "project">
+			<div class="portfolioImage">
+				<figure>
+					<a href="beatWave.html">
+						<img src= "images/myoIcon.jpg" alt = "Leap Motion DJ Project" class="workIcon">
+					</a>
+				</figure>
+			</div>
+
+			<div class = "portfolio-description">
+				<h4>Beatwave- A Motion Tracking DJ App project</h4>
+				<p class = "skills">UX Design and Research </p>
+				<p>Recent advances in consumer grade motion capture technologies have created opportunities for more expressive and accessible DJing applications.
+				Over the course of the semester, my team engaged with DJs to identify and their needs and tested prototypes to determine the most appropriate motion tracking technology. </p>
+				<p>At the end of our project, DJs found that Beatwave exceeded their existing hardware for its performative qualities and enjoyability. </p>
+				<p><a href = "beatWave.html">See Full Case Study</a></p>
+			</div>
+		</div>
+
+		<div class = "project">
+			<div class="portfolioImage">
+				<figure>
+					<a href="sharacter.html">
+						<img src= "images/sharacterLogo.png" alt = "sharacter" class="workIcon" >
+					</a>
+				</figure>
+			</div>
+			<div class = "portfolio-description">
+				<h4>Sharacter- An Interactive Drawing iOS Application</h4>
+				<p class = "skills">UX and Visual Design</p>
+				<p>We wanted an accessible, easy to use, collaborative drawing game that would facilitate creativity and help people connect with distant friends and family. I conducted competitive research and developed the design for the current version. </p>
+				<p>
+				Sharacter is a work in progress, but so far our test users have expressed the desire to invite their friends to play.</p>
+				<p><a href = "sharacter.html">See Full Case Study</a></p>
+			</div>
+		</div>
+
+		<div class = "project">
+			<div class="portfolioImage">
+				<figure>
+					<a href="amazon.html">
+						<img src= "images/amazonPainted.png" alt = "amazonLogo" class="workIcon">
+					</a>
+				</figure>
+			</div>
+			<div class = "portfolio-description">
+				<h4>Amazon UX Design Internship 2015</h4>
+				<p class = "skills">UX and Visual design</p>
+				<p>In the summer of 2015, I designed a feature for Amazon Marketing Services. First, I conducted and compiled competitive research and user research. Using this research and feedback from other designers and developers, I iteratively developed an interactive protype. I updated the design based on user testing and submitted a finalized interactive prototype.</p>
+				<p>The feature hasn't been released yet. Users showed enthusiasm for it during testing, and I successfully promoted the most user-centered of the solutions proposed to leadership. </p>
+			</div>
+		</div>
 
 
-<div class = "dogOuter">
+		<div class = "project">
+			<div class="portfolioImage">
+				<figure>
+					<a href="amaze.html">
+						<img src= "images/ice.png" alt = "illustration" class="workIcon" >
+					</a>
+				</figure>
+			</div>
+			<div class = "portfolio-description">
+				<h4>Amaze Game Jam</h4>
+				<p class = "skills">UX and Visual design</p>
+				<p>Amaze is a game I designed for the 2014 UC Berkeley UPE Game Jam, a 24 hour event, with my teammate, Anton Holmberg. Anton already had an idea for a game, so we identified the constraints (time, skills, and the most appropriate platform and aesthetic for that type of game). I designed the interface and graphics and Anton coded the game using Objective C.</p>
+				<p> Amaze won third place in the game jam.</p>
+				<p><a href = "https://www.youtube.com/watch?v=zko-D2gcc5c">See Game Demo on Youtube</a></p>
+			</div>
+		</div>
 
-	<img src = "images/vennDiagram.png" alt = "programming + art + cognitive science = ux design" style="width:500px;height:auto" class = "displayed">
+
+	</div>
 
 
-</div>
+
+
+	<div id = "footer">
+		<finePrint>CSS, HTML, and design by Ellen</a></finePrint>
+	</div>
+<div
 
 </body>
 </html>

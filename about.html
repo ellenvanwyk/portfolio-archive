@@ -11,29 +11,34 @@
 	</head>
 
 <body>
-<div id="nav">
-	<h1 class="title"><a href="index.html">ELLEN VAN WYK</a></h1>
-	<div class="navbarElement">
-		<a class="navbarLink selected" href="about.html">About</a>
-		<div class="canvasContainer">
-			<canvas class="linkCanvas" width="130" height="130"></canvas>
+	<div id="nav">
+		<h1 class="title"><a href="index.html">ELLEN VAN WYK</a></h1>
+		<h6>&#8226;User Experience Designer&#8226;</h6>
+
+
+		<div class="navbarElement">
+			<a class="navbarLink selected" href="about.html">About</a>
+			<div class="canvasContainer">
+				<canvas class="linkCanvas" width="130" height="130"></canvas>
+			</div>
+		</div>
+		<div class="navbarElement">
+			<a class="navbarLink"href="index.html">Work</a>
+			<div class="canvasContainer">
+				<canvas class="linkCanvas" width="130" height="130"></canvas>
+			</div>
+		</div>
+		<div class="navbarElement">
+			<a class="navbarLink" href="contact.html">Contact</a>
+			<div class="canvasContainer">
+				<canvas class="linkCanvas" width="130" height="130"></canvas>
+			</div>
 		</div>
 	</div>
-	<div class="navbarElement">
-		<a class="navbarLink" href="work.html">Work</a>
-		<div class="canvasContainer">
-			<canvas class="linkCanvas" width="130" height="130"></canvas>
-		</div>
-	</div>
-	<div class="navbarElement">
-		<a class="navbarLink" href="contact.html">Contact</a>
-		<div class="canvasContainer">
-			<canvas class="linkCanvas" width="130" height="130"></canvas>
-		</div>
-	</div>
-</div>
 
 <script>
+
+
 $( document ).ready(function() {
 	$(".navbarLink").mouseenter(function() {
 		var canvas = $(this).next(".canvasContainer").children("canvas")[0];
@@ -51,22 +56,22 @@ $( document ).ready(function() {
 });
 
 </script>
-
+<div id = "borderline"></div>
 <div class = "about" >
 	<div class="aboutInner" >
 		<div class="canvasContainer">
 			<canvas class="linkCanvas" width="130" height="130"></canvas>
 		</div>
 		<img src = "images/portrait.png" alt = "portrait" style="width:150px;height:auto" class = "displayed">
-			<h4 >Background</h4>
-			<p>My academic background in neurobiology and art naturally led me to pursue user experience design. I have worked in multiple research and art settings, including the Animation Research Labs at the University of Washington computer science department. I am now a student in the Master of Information Management and Systems program at UC Berkeley, where I integrate psychology, art, and research to design interactive experiences to enable creativity and scientific thinking.</p>
-			<p>Recently, I have focused on education both as an instructor and a researcher. I am currently a graduate student researcher in the School of Information, where I study tools for youth data literacy and youth driven tech projects. I also co-teach Visual Storytelling, a 1-unit class in the School of Information where students take a user centered design approach to building their portfolio. Additionally, I tutor for Interface Aesthetics, a graphic design class in the School of Information.</p>
-			<p style = "text-align: center"><a href = "vanwykResume.pdf" >Resume</a></p>
+			<h4 class = "case-study" >Background</h4>
+			<p class = "case-study">My academic background in neurobiology and art naturally led me to pursue user experience design. I have worked in multiple research and art settings, including the Animation Research Labs at the University of Washington. I am now a student in the Master of Information Management and Systems program at UC Berkeley, where I integrate psychology, art, and research to design interactive experiences to enable creativity and scientific thinking.</p>
+			<p class = "case-study">Recently, I have focused on education both as an instructor and a researcher. I am currently a graduate student researcher in the School of Information, where I study tools for youth data literacy and youth driven tech projects. I also co-teach Visual Storytelling, a 1-unit class in the School of Information where students take a user centered design approach to building their portfolio. Additionally, I tutor for Interface Aesthetics, a graphic design class in the School of Information.</p>
+			<p style = "text-align: center" class = "case-study"><a href = "vanwykResume.pdf" >Resume</a></p>
 			<br>
 
 			<div class = "listInner">
-			<h4 >Skills and Software</h4>
-			<ul >
+			<h4 class = "case-study" >Skills and Software</h4>
+			<ul  class = "case-study">
 				    <li>Adobe Photoshop and Illustrator</li>
 				  <li>Python (basics)</li>
 				  <li>MATLAB</li>
@@ -79,8 +84,8 @@ $( document ).ready(function() {
 				</ul> 
 			</div>
 			<div class = "listInner">
-			<h4>Coursework</h4>
-			<ul >
+			<h4 class = "case-study">Coursework</h4>
+			<ul class = "case-study">
 				  <li>User Interface Design and Development</li>
 				  <li>Web Architecture</li>
 				  <li>Distributed Computing Applications</li>

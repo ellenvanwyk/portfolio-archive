@@ -6,14 +6,20 @@
 H1, H2, H3 {
     text-align:center; 
     color:#404040; 
-    font-family: 'Amatic SC', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 200%;
     line-height:110%;
 
 } 
 
-H1 {font-size: 254%;
-    letter-spacing: 7px;}
+H1 {font-size: 2em;
+    font-weight:300;
+    margin:0;
+}
+
+H2 {font-size: 2em;
+    font-weight:300;
+}
 
 H3 {font-family: 'Open Sans';
     font-weight: 300;
@@ -22,25 +28,39 @@ H3 {font-family: 'Open Sans';
 }
 
 H4 {font-family: 'Open Sans';
-    font-weight: 700;
-    font-size: .92em;  
+    font-weight: 500;
+    font-size: .9em;  
     color:#404040;
     margin:0;
-}
-li{
-    margin-bottom: 10px;
+    ;
 }
 
+H6 {font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: .9em;  
+    color:#a1a1a1;
+    margin:0;
+    text-transform: uppercase;
+    font-weight:300;
+    margin-bottom:4px;
+    letter-spacing: .13em
+}
+
+li{
+    }
+
 p{
-    margin-bottom: 30px;
+    margin-bottom: .6em;
+    margin-top:0;
 }
 
 p, td, finePrint, li {
     font-family: 'Open Sans';
     text-align: left;
-    font-size: .92em;
+    font-size: 0.9em;
     color: #404040;
-    line-height: 160%;
+    line-height: 140%;
+    font-weight:300;
     }
 
 td{
@@ -83,7 +103,6 @@ span {font-family: 'Open Sans';
 }
 
 
-
 body {
     background-color: #FFFFFF;
 } 
@@ -93,10 +112,10 @@ body {
 .navbarLink {
     font-family: 'Open Sans';
     font-weight: 300;
-    font-size: 15pt;
+    font-size: .9em;
     color: black;
     margin-left: 18px;
-    margin-right: 18px;
+    margin-right: 16px;
     color: #A1A1A1 !important;
 }
 
@@ -105,7 +124,7 @@ body {
 }
 
 .textLink {
-font-family: 'Open Sans';
+    font-family: 'Open Sans';
     text-align: left;
     font-size: 16px;
     color: #404040;;
@@ -130,13 +149,16 @@ font-family: 'Open Sans';
 
 #nav {
     display: table;
-    line-height:46px;
+    line-height:36px;
     background-color:#FFFFFF;
-    height:175px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 15px;
+    font-weight: 300;
+    text-transform:uppercase;
+    letter-spacing: .07em;
+    color:#A1A1A1;
 }
 
 #rightNav {
@@ -281,6 +303,7 @@ figcaption{
 .listInner{
     width:300px;
     float:left;
+    margin-bottom: 50px;
 }
 
 .center{
@@ -288,8 +311,9 @@ figcaption{
 }
 
 .workIcon{
-    width:230px;
+    width:100%;
     height:auto;
+    margin:0;
 }
 
 .centeredDiv{
@@ -297,6 +321,11 @@ figcaption{
     margin-right:auto;
     width:300px;
     text-align: center;
+}
+#content{
+    width:800px;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 
@@ -326,4 +355,47 @@ figcaption{
         width:50%;
     }
 }
+
+.portfolioImage{
+    width:33%;
+    float:left;
+}
+
+.portfolio-description{
+    width:67%;
+    float:right;
+}
+
+.project{
+    height:260px;
+}
+
+.project-title{
+    margin-bottom: 
+}
+
+#borderline{
+    border-style: none none solid;
+    border-color: #F0F0F0 ;
+    border-width: 1px;
+    margin-bottom: 40px;
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.case-study{
+    font-size:1.1em;
+    margin-bottom: 10px;
+}
+
+p.case-study{
+    margin-bottom: 30px;
+}
+
+.skills{
+    font-style: italic;
+}
+
 
