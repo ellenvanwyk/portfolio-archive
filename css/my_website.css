@@ -3,7 +3,7 @@
 @import url('http://fonts.googleapis.com/css?family=Karla:400italic,800italic,400,800');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300');
 
-H1, H2, H3 {
+h1, h2, h3 {
     text-align:center; 
     color:#404040; 
     font-family: 'Open Sans', sans-serif;
@@ -12,54 +12,51 @@ H1, H2, H3 {
 
 } 
 
-H1 {font-size: 2em;
+h1 {font-size: 2.5em;
     font-weight:300;
     margin:0;
 }
 
-H2 {font-size: 2em;
+h2 {font-size: 2em;
     font-weight:300;
 }
 
-H3 {font-family: 'Open Sans';
+h3 {font-family: 'Open Sans';
     font-weight: 300;
     font-size: 160%;
     margin-top: 60px;
 }
 
-H4 {font-family: 'Open Sans';
+h4 {font-family: 'Open Sans';
     font-weight: 500;
-    font-size: .9em;  
+    font-size: 1em;  
     color:#404040;
     margin:0;
     ;
 }
 
-H6 {font-family: 'Open Sans';
+h6 {font-family: 'Open Sans';
     font-weight: 700;
-    font-size: .9em;  
+    font-size: 1em;  
     color:#a1a1a1;
     margin:0;
     text-transform: uppercase;
     font-weight:300;
     margin-bottom:4px;
-    letter-spacing: .13em
 }
 
-li{
-    }
 
 p{
     margin-bottom: .6em;
     margin-top:0;
 }
 
-p, td, finePrint, li {
+p, td, .caption, li {
     font-family: 'Open Sans';
     text-align: left;
-    font-size: 0.9em;
+    font-size: 1.0em;
     color: #404040;
-    line-height: 140%;
+    line-height: 150%;
     font-weight:300;
     }
 
@@ -67,6 +64,10 @@ td{
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.caption{
+    text-align:center;
 }
 
 #index{
@@ -112,10 +113,10 @@ body {
 .navbarLink {
     font-family: 'Open Sans';
     font-weight: 300;
-    font-size: .9em;
+    font-size: 1em;
     color: black;
-    margin-left: 18px;
-    margin-right: 16px;
+    margin-left: 28px;
+    margin-right: 28px;
     color: #A1A1A1 !important;
 }
 
@@ -223,6 +224,15 @@ p a:visited{color:#6ACC76;}
 p a:link{color:#6ACC76;}
 
 
+h4 a:link{
+    color: #6ACC76;
+}
+
+h4 a:visited{
+    color: #6ACC76;
+}
+
+
 a:link    {color:#404040;}  
 a:visited {color:#404040;}  
 a:hover   {color:#404040;}  
@@ -252,6 +262,7 @@ h1.title {
     position: relative;
     float: left;
     z-index: 10;
+    margin-top:10px;
 }
 
 a:hover {
@@ -304,6 +315,8 @@ figcaption{
     width:300px;
     float:left;
     margin-bottom: 50px;
+    padding-left:50px;
+    padding-right:50px;
 }
 
 .center{
@@ -352,7 +365,7 @@ figcaption{
 
 @media(min-width : 900px) {
     .aboutInner{
-        width:50%;
+        width:800px;
     }
 }
 
@@ -367,7 +380,7 @@ figcaption{
 }
 
 .project{
-    height:260px;
+    height:220px;
 }
 
 .project-title{
@@ -382,7 +395,7 @@ figcaption{
     width:800px;
     margin-left:auto;
     margin-right:auto;
-
+    margin-top:10px;
 }
 
 .case-study{
