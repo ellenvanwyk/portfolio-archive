@@ -21,7 +21,7 @@ h2 {font-size: 1.7em;
     font-weight:400;
     text-align: left;
     border-style: none none dotted;
-	border-color: #d3d3d3;
+	border-color: #e5e5e5;
 	border-width: 3px;
 	padding-bottom: 10px;
 }
@@ -73,7 +73,7 @@ td{
 }
 
 .quote{
-	font-weight: 300;
+	font-weight: 400;
     font-size: 1.2em;
     font-style: italic;
     color:#404040;
@@ -154,6 +154,10 @@ body {
     margin-bottom: 10px;
     margin-top: 30px;
 
+}
+
+.bigImg{
+    width:60%;
 }
 
 .displayed {
@@ -264,7 +268,7 @@ h1.title {
 }
 
 .linkCanvas {
-    position: relative;
+    position: absolute;
     left: -130px;
     top: -130px;
     -ms-transform: scale(0.5,0.5); /* IE 9 */
@@ -343,7 +347,7 @@ figcaption{
 }
 
 .workIcon{
-    width:100%;
+    width:90%;
     height:auto;
     margin:0;
 }
@@ -373,6 +377,9 @@ figcaption{
     }
     #leftNav{
         margin-left:10px;
+    }
+    .bigImg{
+        width:100%;
     }
 }
 
@@ -408,7 +415,7 @@ figcaption{
 
 #borderline{
     border-style: none none dotted;
-	border-color: #d3d3d3;
+	border-color: #e5e5e5;
 	border-width: 3px;
     margin-bottom: 40px;
     width:800px;
@@ -441,3 +448,6 @@ p.case-study{
      height:auto;
 }
 
+figure{
+    text-align:center;
+}

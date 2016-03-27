@@ -252,7 +252,7 @@ h1.title {
 }
 
 .linkCanvas {
-    position: relative;
+    position: absolute;
     left: -130px;
     top: -130px;
     -ms-transform: scale(0.5,0.5); /* IE 9 */
