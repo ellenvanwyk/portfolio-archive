@@ -1,0 +1,442 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700,300italic,400italic,700italic');
+
+h1, h2, h3 {
+    text-align:center; 
+    color:#404040; 
+    font-family: 'Lato', sans-serif;
+    font-size: 200%;
+    line-height:110%;
+
+} 
+
+
+h1 {font-size: 2.5em;
+    font-weight:300;
+    margin:0;
+}
+
+h2 {font-size: 1.7em;
+    font-weight:400;
+    text-align: left;
+    border-style: none none dotted;
+	border-color: #d3d3d3;
+	border-width: 3px;
+	padding-bottom: 10px;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 1.7em;
+    font-style: italic;
+    margin:10px;
+}
+
+h4 {font-family: 'Lato';
+    font-weight: 400;
+    font-size: 1em;  
+    color:#545454;
+    margin:0;
+}
+
+h6 {font-family: 'Lato';
+    font-weight: 400;
+    font-size: 1em;  
+    color:#a1a1a1;
+    margin:0;
+    font-weight:300;
+    margin-bottom:4px;
+}
+
+
+p{
+    margin-bottom: 8px;
+    margin-top:0;
+    z-index:5;
+}
+
+p, td, .caption, li {
+    font-family: 'Lato';
+    text-align: left;
+    font-size: 1.0em;
+    color: #404040;
+    line-height: 150%;
+    font-weight:300;
+    }
+
+td{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+.quote{
+	font-weight: 300;
+    font-size: 1.2em;
+    font-style: italic;
+    color:#404040;
+}
+
+.caption{
+    text-align:center;
+}
+
+#index{
+    text-align: center;
+}
+
+#contact{
+    text-align: center;
+}
+
+finePrint {
+    color:#404040; 
+    font-size: 12px;
+    text-align: center;
+    color: #A1A1A1 !important;
+}    
+
+.lRNavigation {
+    color: #A1A1A1 !important;
+}
+
+span {font-family: 'Lato';
+    font-weight: 300;
+    font-size: 14px;
+    color:#A1A1A1;
+    line-height: 40%;
+    margin-bottom: 
+}
+
+#footer {
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+
+body {
+    background-color: #FFFFFF;
+} 
+
+ /* navigation bar at top of each page */
+
+.navbarLink {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 1em;
+    color: black;
+    margin-left: 28px;
+    margin-right: 28px;
+    color: #A1A1A1 !important;
+}
+
+.selected {
+    color: #404040 !important;
+}
+
+.textLink {
+    font-family: 'Lato';
+    text-align: left;
+    font-size: 16px;
+    color: #404040;;
+}
+.resume{
+    text-align: center;
+}
+
+ img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+}
+
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+#nav {
+    display: table;
+    line-height:36px;
+    background-color:#FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 300;
+    letter-spacing: .07em;
+    color:#A1A1A1;
+}
+
+#rightNav {
+    float:right;
+    margin-right: 100px;
+    padding-top: 35px;
+}
+
+#leftNav {
+    float:left;
+    margin-left: 100px;
+    padding-top: 35px;
+}
+
+.dog {
+    line-height:30px;
+    float:left;
+    padding:10px;
+    text-align: center;
+}
+
+
+.dogOuter{
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+
+.about {
+    line-height:20px;
+    background-color:#FFFFFF;
+    height:200px;
+    width:100%;
+    margin-bottom: 80px;
+}
+
+.aboutInner {
+    margin: 0 auto;
+     margin-bottom: 80px;
+}
+
+.tableInner {
+    width: 70%;
+    margin: 0 auto;
+     margin-bottom: 80px;
+}
+
+#inLineImg{
+    max-width: 70%;
+        margin: 0 auto;
+     margin-bottom: 80px;
+}
+
+a {
+    text-decoration:none;
+}
+
+p a:visited{color:#6ACC76;}
+p a:link{color:#6ACC76;}
+
+
+h4 a:link{
+    color: #6ACC76;
+}
+
+h4 a:visited{
+    color: #6ACC76;
+}
+
+
+a:link    {color:#404040;}  
+a:visited {color:#404040;}  
+a:hover   {color:#404040;}  
+a:active  {color:#404040;} 
+
+
+ /* unique title formatting for nav bar */
+h1.title {
+    text-align: center;
+}
+
+.canvasContainer {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   z-index: -1;
+}
+
+.linkCanvas {
+    position: relative;
+    left: -130px;
+    top: -130px;
+    -ms-transform: scale(0.5,0.5); /* IE 9 */
+    -webkit-transform: scale(0.5,0.5); /* Chrome, Safari, Opera */
+    transform: scale(0.5,0.5);
+}
+
+.navbarElement {
+    left: 0; top: 0;
+    position: relative;
+    float: left;
+    z-index: 10;
+    margin-top:10px;
+}
+
+a:hover {
+    color:#404040;
+} 
+
+tr.spaceUnder > td {
+  padding-bottom: 100px;
+}
+.bold{
+    font-weight:bold;
+}
+
+.drawingsTable{
+     margin: 0 auto;
+    width:765px;
+    height:100%;
+}
+
+table{
+	margin-bottom:40px;
+}
+
+.parDiv{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.parImg{
+    float:left;
+    margin:30px;
+    width:25%;
+    height: 100%;
+}
+
+.parText{
+    float:right;
+    margin:10px;
+    width:300px;
+    float:left;
+    height: 100%
+}
+
+.parP{
+    margin-bottom: 30px;
+}
+
+figcaption{
+    margin-bottom: 30px;
+}
+
+.listInner{
+    width:300px;
+    float:left;
+    margin-bottom: 50px;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.center{
+    text-align: center;
+}
+
+.workIcon{
+    width:100%;
+    height:auto;
+    margin:0;
+}
+
+.centeredDiv{
+    margin-left:auto; 
+    margin-right:auto;
+    width:300px;
+    text-align: center;
+}
+#content{
+    width:800px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+
+@media(max-width : 600px) {
+    .aboutInner{
+        width:95%;
+    }
+    h2{
+        margin-top:100px;
+    }
+    #rightNav{
+        margin-right:10px;
+    }
+    #leftNav{
+        margin-left:10px;
+    }
+}
+
+@media(max-width : 900px) {
+    .aboutInner{
+        width:90%;
+    }
+}
+
+@media(min-width : 900px) {
+    .aboutInner{
+        width:800px;
+    }
+}
+
+.portfolioImage{
+    width:31%;
+    float:left;
+}
+
+.portfolio-description{
+    width:69%;
+    float:right;
+}
+
+.project{
+    height:220px;
+}
+
+.project-title{
+    margin-bottom: 
+}
+
+#borderline{
+    border-style: none none dotted;
+	border-color: #d3d3d3;
+	border-width: 3px;
+    margin-bottom: 40px;
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+}
+
+.case-study{
+    margin-bottom: 10px;
+}
+
+p.case-study{
+    margin-bottom: 18px;
+}
+
+.skills{
+    font-style: italic;
+}
+
+.right-panel{
+    width:40%;
+    height:auto;
+    float:right;
+    padding:20px;
+}
+
+.right-panel img{
+     width:100%;
+     height:auto;
+}
+
