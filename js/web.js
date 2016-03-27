@@ -98,7 +98,7 @@ var WebRenderer = function(web, canvas) {
 	this.render = function() {
 		var c = this.canvas.getContext("2d");
 		c.strokeStyle = 'rgba(0,0,0, 0.1)';
-		c.lineWidth = 1;
+		c.lineWidth = 2;
 		c.beginPath();
 		for (var i = 0; i < web.nodes.length; i++) {
 			if(!web.nodes[i].rendered) {

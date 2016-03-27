@@ -253,8 +253,11 @@ h1.title {
 
 .linkCanvas {
     position: relative;
-    left: -65px;
-    top: -65px;
+    left: -130px;
+    top: -130px;
+    -ms-transform: scale(0.5,0.5); /* IE 9 */
+    -webkit-transform: scale(0.5,0.5); /* Chrome, Safari, Opera */
+    transform: scale(0.5,0.5);
 }
 
 .navbarElement {
