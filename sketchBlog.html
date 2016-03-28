@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ellen Van Wyk&rsquo;s Portfolio</title>
+		<link rel=stylesheet type="text/css" href="css/style.css" id="all"/>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="js/web.js"></script> 
+	</head>
+
+<body>
+	<div id="nav">
+		<h1 class="title"><a href="index.html">Ellen Van Wyk</a></h1>
+		<h6>Artist + Scientist = UX Designer</h6>
+
+		<div class="navbarElement">
+			<a class="navbarLink "href="index.html">Work</a>
+			<div class="canvasContainer">
+				<canvas class="linkCanvas" width="260" height="260"></canvas>
+			</div>
+		</div>
+
+		<div class="navbarElement">
+			<a class="navbarLink " href="about.html">About</a>
+			<div class="canvasContainer">
+				<canvas class="linkCanvas" width="260" height="260"></canvas>
+			</div>
+		</div>
+		<div class="navbarElement">
+			<a class="navbarLink selected" href="sketchBlog.html">Sketch Blog</a>
+			<div class="canvasContainer">
+				<canvas class="linkCanvas" width="260" height="260"></canvas>
+			</div>
+		</div>
+	</div>
+
+
+
+<script>
+$( document ).ready(function() {
+	$(".navbarLink").mouseenter(function() {
+		var canvas = $(this).next(".canvasContainer").children("canvas")[0];
+		var web = new Web(canvas.width, canvas.height, 150, 0.1, 0.2, 0.097);
+		var renderer = new WebRenderer(web, canvas);
+		var interval = setInterval(function() {
+			web.expand();
+			renderer.render();
+		}, 50);
+		$(this).mouseleave(function() {
+			clearInterval(interval);
+			renderer.clearCanvas();
+		});
+	});
+});
+</script>
+
+<div id = "borderline"></div>
+
+<div class = 'about'>
+	<div class = 'sketchInner'>
+		<script type='text/javascript' src='http://sketchesandsketches.tumblr.com/js'></script>
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>

@@ -58,7 +58,6 @@ p{
 
 p, td, .caption, li {
     font-family: 'Lato';
-    text-align: left;
     font-size: 1.0em;
     color: #404040;
     line-height: 150%;
@@ -450,4 +449,44 @@ p.case-study{
 
 figure{
     text-align:center;
+}
+
+.link-icons{
+    font-size: 2em;
+    text-align: center;
+
+}
+
+.fa{
+    color:#6ACC76;
+    padding:10px;
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: row;
+}
+
+.portrait {
+  flex: 1;
+}
+.biography {
+  flex: 3;
+}
+
+.sketchInner{
+    width:880px;
+    margin: 0 auto;
+    
+}
+
+li.tumblr_post { 
+    text-align:center;
+    padding:10px;
+    display:inline-block;
+}
+ol.tumblr_posts { 
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
