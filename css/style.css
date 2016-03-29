@@ -395,7 +395,8 @@ figcaption{
 }
 
 .portfolioImage{
-    width:31%;
+    width:240px;
+    height:auto;
     float:left;
 }
 
