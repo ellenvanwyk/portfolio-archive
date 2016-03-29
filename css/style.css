@@ -43,7 +43,7 @@ h4 {font-family: 'Lato';
 h6 {font-family: 'Lato';
     font-weight: 400;
     font-size: 1em;  
-    color:#a1a1a1;
+    color:#979797;
     margin:0;
     font-weight:300;
     margin-bottom:4px;
@@ -89,24 +89,14 @@ td{
 #contact{
     text-align: center;
 }
-
-finePrint {
-    color:#404040; 
-    font-size: 12px;
-    text-align: center;
-    color: #A1A1A1 !important;
-}    
-
-.lRNavigation {
-    color: #A1A1A1 !important;
-}
+   
 
 span {font-family: 'Lato';
     font-weight: 300;
-    font-size: 14px;
-    color:#A1A1A1;
+    font-size: 1em;
+    color:#979797;
     line-height: 40%;
-    margin-bottom: 
+    font-style: italic;
 }
 
 #footer {
@@ -129,11 +119,12 @@ body {
     color: black;
     margin-left: 28px;
     margin-right: 28px;
-    color: #A1A1A1 !important;
+    color: #979797 !important;
 }
 
 .selected {
     color: #404040 !important;
+    font-weight:400;
 }
 
 .textLink {
@@ -174,7 +165,7 @@ body {
     padding-top: 15px;
     font-weight: 300;
     letter-spacing: .07em;
-    color:#A1A1A1;
+    color:#979797;
 }
 
 #rightNav {
@@ -209,7 +200,6 @@ body {
 .about {
     line-height:20px;
     background-color:#FFFFFF;
-    height:200px;
     width:100%;
     margin-bottom: 80px;
 }
@@ -248,10 +238,8 @@ h4 a:visited{
 }
 
 
-a:link    {color:#404040;}  
-a:visited {color:#404040;}  
-a:hover   {color:#404040;}  
-a:active  {color:#404040;} 
+a:link   a:visited a:hover a:active 
+    {color:#404040;}  
 
 
  /* unique title formatting for nav bar */
@@ -331,6 +319,10 @@ table{
 
 figcaption{
     margin-bottom: 30px;
+    margin-top:20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .listInner{
@@ -452,15 +444,25 @@ figure{
     text-align:center;
 }
 
+
 .link-icons{
-    font-size: 2em;
     text-align: center;
+}
+
+.link-icons .fa{
+    font-size: 2em;
+    padding:10px;
+}
+
+.footer-icons .fa{
+    font-size:1em;
+    padding:10px;
+    padding-bottom:20px;
 
 }
 
 .fa{
     color:#6ACC76;
-    padding:10px;
 }
 
 .grid__row {
