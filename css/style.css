@@ -490,3 +490,22 @@ ol.tumblr_posts {
     padding: 0;
     margin: 0;
 }
+
+
+.problem-action-result{
+    text-align: center;
+    width:244px;
+    display: inline-block;
+    vertical-align: top;
+    padding-right:20px;
+}
+
+.problem-action-result:last-child { padding-right: 0; }
+
+.problem-action-result .fa{
+    font-size:4em;
+}
+
+#project-summary{
+    text-align:center;
+}

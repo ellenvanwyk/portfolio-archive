@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Ellen Van Wyk&rsquo;s Portfolio</title>
 		<link rel=stylesheet type="text/css" href="css/style.css" id="all"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="js/web.js"></script> 
 	</head>
@@ -61,9 +62,24 @@ $( document ).ready(function() {
 	<div class="aboutInner">
 		<h1>Amaze</h1>
 		<img src= "images/ice.png" alt = "ice" style="width:200px;height:auto;" class = "displayed">
-		<p>Amaze is a game I designed for the 2014 UC Berkeley UPE Game Jam, a 24 hour event, with my teammate, Anton Holmberg. Anton already had an idea for a game, so we identified the constraints (time, skills, and the most appropriate platform and aesthetic for that type of game). I designed the interface and graphics and Anton coded the game in Xcode using Objective C. Amaze won third place in the game jam!</p>
-		<br>
-
+		<div id = "project-summary">
+			<div class = "problem-action-result">
+				<i class="fa fa-question"></i>
+				<h4>Problem</h4>
+				<p>Design a game in 24 hours for the 2014 UC Berkeley UPE Game Jam.</p>
+			</div>
+			<div class = "problem-action-result">
+				<i class="fa fa-bolt"></i>
+				<h4>Action</h4>
+				<p>We identified our team's skills (2D illustration and iOS) and constraints of the desired gameplay (multiplayer maze game) to guide the design and implementation.</p>
+			</div>
+			<div class = "problem-action-result">
+				<i class="fa fa-check"></i>
+				<h4>Result</h4>
+				<p>Amaze won 3rd place in the game jam with over 20 teams.</p>
+			</div>
+		</div>	
+		<h2>Demo</h2>
 		<div class = "displayed">
 			 <iframe style = "width:400px;height:530px;margin-left:auto;margin-right:auto;display:block;" src="https://www.youtube.com/embed/zko-D2gcc5c" frameborder="0" allowfullscreen></iframe><figcaption><span>A screencast of sample gameplay. Amaze is a single player puzzle game for iOS where the player who creates the most complicated maze wins. I am designing a maze for the computer (blue character) and the AI builds a maze for my magenta character when I hit run.  The player who builds the best maze for the opponent will reach the finish line first and win.</span></figcaption>
 			 </EMBED>
