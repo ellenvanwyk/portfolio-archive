@@ -201,7 +201,7 @@ body {
     line-height:20px;
     background-color:#FFFFFF;
     width:100%;
-    margin-bottom: 80px;
+    padding-bottom: 200px;
 }
 
 .aboutInner {
@@ -509,6 +509,7 @@ ol.tumblr_posts {
 
 .problem-action-result .fa{
     font-size:4em;
+    padding-bottom:10px;
 }
 
 #project-summary{
