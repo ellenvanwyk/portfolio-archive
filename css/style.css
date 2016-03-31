@@ -335,8 +335,6 @@ figcaption{
     width:300px;
     float:left;
     margin-bottom: 50px;
-    padding-left:50px;
-    padding-right:50px;
 }
 
 .center{
@@ -356,7 +354,6 @@ figcaption{
     text-align: center;
 }
 #content{
-    width:800px;
     margin-left: auto;
     margin-right:auto;
 }
@@ -366,9 +363,7 @@ figcaption{
     .aboutInner{
         width:95%;
     }
-    h2{
-        margin-top:100px;
-    }
+
     #rightNav{
         margin-right:10px;
     }
@@ -379,7 +374,26 @@ figcaption{
         width:100%;
     }
     .about{
-        padding-bottom: 600px;
+        padding-bottom: 80px;
+    }
+    .navbarLink{
+        margin:0 10px;
+    }
+    #borderline{
+        width:100%; 
+    }
+    .portfolioImage{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .project{
+        margin:40px 10px;
+    }
+    .workIcon{
+        margin:20px 0 0 0;
+    }
+    .problem-action-result{
+        padding-bottom:20px;
     }
 }
 
@@ -387,6 +401,31 @@ figcaption{
     .aboutInner{
         width:90%;
     }
+}
+
+@media(min-width : 600px) {
+    #borderline{
+        width:800px; 
+    }
+    .project{
+        height:220px;
+    }
+    #content{
+        width:800px;
+    }
+
+    .portfolio-description{
+        width:69%;
+        float:right;
+    }
+    .portfolioImage{
+        float:left;
+    }
+    .problem-action-result{
+        padding-right:20px;
+    }
+
+
 }
 
 @media(min-width : 900px) {
@@ -398,17 +437,10 @@ figcaption{
 .portfolioImage{
     width:240px;
     height:auto;
-    float:left;
 }
 
-.portfolio-description{
-    width:69%;
-    float:right;
-}
 
-.project{
-    height:220px;
-}
+
 
 .project-title{
     margin-bottom: 
@@ -419,7 +451,6 @@ figcaption{
 	border-color: #e5e5e5;
 	border-width: 3px;
     margin-bottom: 40px;
-    width:800px;
     margin-left:auto;
     margin-right:auto;
     margin-top:10px;
@@ -510,7 +541,6 @@ ol.tumblr_posts {
     width:244px;
     display: inline-block;
     vertical-align: top;
-    padding-right:20px;
 }
 
 .problem-action-result:last-child { padding-right: 0; }
