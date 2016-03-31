@@ -390,10 +390,16 @@ figcaption{
         margin:40px 10px;
     }
     .workIcon{
-        margin:20px 0 0 0;
+        margin:20px 0 10px 0;
     }
     .problem-action-result{
         padding-bottom:20px;
+    }
+    .tumblr-photo{
+        width:100%;
+    }
+    .tumblr_photo_post{
+        width:300px;
     }
 }
 
@@ -423,6 +429,10 @@ figcaption{
     }
     .problem-action-result{
         padding-right:20px;
+    }
+
+    li.tumblr-post{
+        display:inline-block;
     }
 
 
@@ -527,7 +537,6 @@ figure{
 li.tumblr_post { 
     text-align:center;
     padding:10px;
-    display:inline-block;
 }
 ol.tumblr_posts { 
     list-style: none;
