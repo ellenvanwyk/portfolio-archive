@@ -516,3 +516,7 @@ ol.tumblr_posts {
     text-align:center;
     margin-top:30px;
 }
+
+.tumblr_caption{
+    max-width:400px;
+}
