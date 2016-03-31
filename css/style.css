@@ -374,7 +374,7 @@ figcaption{
         width:100%;
     }
     .about{
-        padding-bottom: 80px;
+        padding-bottom: 40px;
     }
     .navbarLink{
         margin:0 10px;
@@ -431,7 +431,7 @@ figcaption{
         padding-right:20px;
     }
 
-    li.tumblr-post{
+    li.tumblr_post{
         display:inline-block;
     }
 
