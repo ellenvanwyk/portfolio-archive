@@ -434,6 +434,11 @@ figcaption{
     li.tumblr_post{
         display:inline-block;
     }
+    .right-panel{
+        float:right;
+        padding:20px;
+        width:40%;
+    }
 
 
 }
@@ -478,12 +483,6 @@ p.case-study{
     font-style: italic;
 }
 
-.right-panel{
-    width:40%;
-    height:auto;
-    float:right;
-    padding:20px;
-}
 
 .right-panel img{
      width:100%;
@@ -531,6 +530,7 @@ figure{
 .sketchInner{
     width:880px;
     margin: 0 auto;
+    text-align:center;
     
 }
 
@@ -567,3 +567,8 @@ ol.tumblr_posts {
 .tumblr_caption{
     max-width:400px;
 }
+
+.nextProject{
+    margin:0 13px;
+}
+
