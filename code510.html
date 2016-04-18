@@ -12,35 +12,35 @@
 	</head>
 
 <body>
-	<div id="nav">
+	<nav>
 		<h1 class="title"><a href="index.html">Ellen Van Wyk</a></h1>
 		<h6>Artist + Scientist = UX Designer</h6>
 
-		<div class="navbarElement">
-			<a class="navbarLink selected"href="index.html">Work</a>
-			<div class="canvasContainer">
-				<canvas class="linkCanvas" width="260" height="260"></canvas>
+		<div class="nav-element">
+			<a class="nav-link selected"href="index.html">Work</a>
+			<div class="canvas-container">
+				<canvas class="link-canvas" width="260" height="260"></canvas>
 			</div>
 		</div>
 
-		<div class="navbarElement">
-			<a class="navbarLink " href="about.html">About</a>
-			<div class="canvasContainer">
-				<canvas class="linkCanvas" width="260" height="260"></canvas>
+		<div class="nav-element">
+			<a class="nav-link " href="about.html">About</a>
+			<div class="canvas-container">
+				<canvas class="link-canvas" width="260" height="260"></canvas>
 			</div>
 		</div>
-		<div class="navbarElement">
-			<a class="navbarLink " href="sketchBlog.html">Sketch Blog</a>
-			<div class="canvasContainer">
-				<canvas class="linkCanvas" width="260" height="260"></canvas>
+		<div class="nav-element">
+			<a class="nav-link " href="sketchBlog.html">Sketch Blog</a>
+			<div class="canvas-container">
+				<canvas class="link-canvas" width="260" height="260"></canvas>
 			</div>
 		</div>
-	</div>
+	</nav>
 
 <script>
 $( document ).ready(function() {
-	$(".navbarLink").mouseenter(function() {
-		var canvas = $(this).next(".canvasContainer").children("canvas")[0];
+	$(".nav-link").mouseenter(function() {
+		var canvas = $(this).next(".canvas-container").children("canvas")[0];
 		var web = new Web(canvas.width, canvas.height, 150, 0.1, 0.2, 0.097);
 		var renderer = new WebRenderer(web, canvas);
 		var interval = setInterval(function() {
@@ -56,11 +56,9 @@ $( document ).ready(function() {
 
 
 </script>
-<div id = "borderline"></div>
 
-
-<div class = "about">
-	<div class="aboutInner">
+<div class = "container" >
+	<div class="content" >
 		<h1>Code 510</h1>
 		<img src= "images/code510.png" alt = "et al health logo" style="width:200px;height:auto;" class = "displayed">
 		<div id = "project-summary">
@@ -82,41 +80,41 @@ $( document ).ready(function() {
 		</div>		
 
 		<h2>Overview</h2>
-		<p class = "case-study">Code 510 is an after school program where youth from the East bay can find mentorship for their self driven projects and learn computing skills. I have volunteered as a mentor for Code 510 for the last 2 years and have supported two game projects: one in javascript and one in 3D using Unity and Autodesk Maya. I advise students in the areas of design, concept art, Maya, and code.</p>
+		<p class = "body-text">Code 510 is an after school program where youth from the East bay can find mentorship for their self driven projects and learn computing skills. I have volunteered as a mentor for Code 510 for the last 2 years and have supported two game projects: one in javascript and one in 3D using Unity and Autodesk Maya. I advise students in the areas of design, concept art, Maya, and code.</p>
 
  		<p>Recently I designed and built the website to host Code 510&rsquo;s curriculum and outreach using Wordpress. This was an opportunity to learn about customizing layout and fields in Wordpress and branding. I wanted to represent code 510 by making the site fresh, bright, and modern but not slick: the learning environment at Code 510 prioritizes process over product and self exploration over polish. </p>
  		<p><a href = "http://www.code510.org/"><i class="fa fa-arrow-circle-right"></i>Visit Code 510 site</a></p>
 
 		<h3>More Projects:</h3>
-			<div class="portfolioImage nextProject">
+			<div class="link-image next-project">
 				<figure>
-					<a href = "beatWave.html"><img src= "images/myo2.png" alt = "beatwave" class="workIcon"></a>
+					<a href = "beatWave.html"><img src= "images/myo2.png" alt = "myo armband with soundwaves" class="thumbnail-img"></a>
 					<figcaption class = "caption" >Beatwave: A Motion Tracking DJ App</figcaption>	
 				</figure>
 			</div>
-			<div class="portfolioImage nextProject">
+			<div class="link-image next-project">
 				<figure>
-					<a href = "etalHealth.html"><img src= "images/etalTempLogo.png" alt = "et al logo" class="workIcon"></a>
+					<a href = "etalHealth.html"><img src= "images/etalTempLogo.png" alt = "et al logo" class="thumbnail-img"></a>
 					<figcaption class = "caption" >et al Health: Rare disease doctor search</figcaption>	
 				</figure>
 			</div>
-			<div class="portfolioImage nextProject">
+			<div class="link-image next-project">
 				<figure>
-						<a href = "amaze.html"><img src= "images/ice.png" alt = "illustration" class="workIcon" ></a>
+						<a href = "amaze.html"><img src= "images/ice.png" alt = "illustration" class="thumbnail-img" ></a>
 						<figcaption class = "caption">Amaze Game Jam</figcaption>
 				</figure>
 			</div>
 		</div>
 	
 </div>
-<div id = "footer">
+<footer>
 		<div class = "vcard footer-icons">
-				<a href="mailto:ejvw@ischool.berkeley.edu" target="_top"><i class="fa fa-envelope-o email" title = "email"></i></a>
-				<a  href = 'https://www.linkedin.com/pub/ellen-van-wyk/87/1b3/244'><i class="fa fa-linkedin" title = "linkedin profile"></i></a>
-				<a href = "vanwykResume.pdf" ><i class="fa fa-file-text-o" title = "resume"></i></a>
-			</div>
-			<span>CSS, HTML, and design by Ellen</a></span>
+			<a href="mailto:ejvw@ischool.berkeley.edu" target="_top"><i class="fa fa-envelope-o email" title = "email"></i></a>
+			<a  href = 'https://www.linkedin.com/pub/ellen-van-wyk/87/1b3/244'><i class="fa fa-linkedin" title = "linkedin profile"></i></a>
+			<a href = "vanwykResume.pdf" ><i class="fa fa-file-text-o" title = "resume"></i></a>
 		</div>
+		<span>CSS, HTML, and design by Ellen</a></span>
+</footer>
 <div>
 </body>
 

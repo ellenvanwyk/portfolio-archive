@@ -101,7 +101,7 @@ span {font-family: 'Lato';
     font-style: italic;
 }
 
-#footer {
+footer {
     bottom: 10px;
     width: 100%;
     text-align: center;
@@ -114,7 +114,7 @@ body {
 
  /* navigation bar at top of each page */
 
-.navbarLink {
+.nav-link {
     font-family: 'Lato';
     font-weight: 300;
     font-size: 1em;
@@ -157,7 +157,7 @@ body {
     margin-left: auto;
     margin-right: auto }
 
-#nav {
+nav {
     display: table;
     line-height:36px;
     background-color:#FFFFFF;
@@ -199,16 +199,24 @@ body {
 }
 
 
-.about {
+.container {
     line-height:20px;
     background-color:#FFFFFF;
     width:100%;
     padding-bottom: 200px;
 }
 
-.aboutInner {
+.content {
     margin: 0 auto;
      margin-bottom: 80px;
+    border-style: dotted none none;
+    border-color: #e5e5e5;
+    border-width: 3px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding-top: 40px;
 }
 
 .tableInner {
@@ -253,14 +261,14 @@ h1.title {
     text-align: center;
 }
 
-.canvasContainer {
+.canvas-container {
    position: absolute;
    left: 50%;
    top: 50%;
    z-index: -1;
 }
 
-.linkCanvas {
+.link-canvas {
     position: absolute;
     left: -130px;
     top: -130px;
@@ -269,7 +277,7 @@ h1.title {
     transform: scale(0.5,0.5);
 }
 
-.navbarElement {
+.nav-element {
     left: 0; top: 0;
     position: relative;
     float: left;
@@ -331,7 +339,7 @@ figcaption{
     margin-right: auto;
 }
 
-.listInner{
+.list{
     width:300px;
     float:left;
     margin-bottom: 50px;
@@ -341,7 +349,7 @@ figcaption{
     text-align: center;
 }
 
-.workIcon{
+.thumbnail-img{
     width:90%;
     height:auto;
     margin:0;
@@ -360,7 +368,7 @@ figcaption{
 
 
 @media(max-width : 600px) {
-    .aboutInner{
+    .content{
         width:95%;
     }
 
@@ -376,20 +384,20 @@ figcaption{
     .about{
         padding-bottom: 40px;
     }
-    .navbarLink{
+    .nav-link{
         margin:0 10px;
     }
     #borderline{
         width:100%; 
     }
-    .portfolioImage{
+    .link-image{
         margin-left:auto;
         margin-right:auto;
     }
     .project{
         margin:40px 10px;
     }
-    .workIcon{
+    .thumbnail-img{
         margin:20px 0 10px 0;
     }
     .problem-action-result{
@@ -404,7 +412,7 @@ figcaption{
 }
 
 @media(max-width : 900px) {
-    .aboutInner{
+    .content{
         width:90%;
     }
 }
@@ -424,7 +432,7 @@ figcaption{
         width:69%;
         float:right;
     }
-    .portfolioImage{
+    .link-image{
         float:left;
     }
     .problem-action-result{
@@ -444,12 +452,12 @@ figcaption{
 }
 
 @media(min-width : 900px) {
-    .aboutInner{
+    .content{
         width:800px;
     }
 }
 
-.portfolioImage{
+.link-image{
     width:240px;
     height:auto;
 }
@@ -527,11 +535,18 @@ figure{
   flex: 3;
 }
 
-.sketchInner{
+.blog-content{
     width:880px;
     margin: 0 auto;
     text-align:center;
-    
+    border-style: dotted none none;
+    border-color: #e5e5e5;
+    border-width: 3px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding-top: 40px;
 }
 
 li.tumblr_post { 
@@ -568,7 +583,7 @@ ol.tumblr_posts {
     max-width:400px;
 }
 
-.nextProject{
+.next-project{
     margin:0 13px;
 }
 
