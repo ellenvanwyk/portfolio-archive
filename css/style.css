@@ -112,6 +112,10 @@ body {
     background-color: #FFFFFF;
 } 
 
+li{
+    padding-bottom:6px;
+}
+
  /* navigation bar at top of each page */
 
 .nav-link {
@@ -586,4 +590,5 @@ ol.tumblr_posts {
 .next-project{
     margin:0 13px;
 }
+
 
