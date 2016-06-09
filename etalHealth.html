@@ -151,7 +151,7 @@ $( document ).ready(function() {
 
 		<ul>
 			<li>
-			 Many rare diseases have subtypes, which adds yet another layer of complexity. For example, Castleman has 4 different subtypes. Ideally, a doctor's profile page should include these disease subtypes or 	&ldquo;keywords	&rdquo; However, I determined after some research that these subtypes are not consistently available through PubMed and this feature would add additional overhead to our already pressed data scientists. I proceeded with a &ldquo;Keyword&rdquo; design intending to collect quotes from our users as a way to confirm their importance and advocate for them in a future release.
+			 Many rare diseases have subtypes, which adds yet another layer of complexity. For example, Castleman has 4 different subtypes. Initially, we hoped to be able to include keywords such as subtypes, demographics, and symptoms, but we discovered there was no feasible data solution. Later versions of the designs do include subtypes, which our data scientists were able to accommodate.  
 			</li>
 
 			<li>Different users want to see different signals of doctor quality, including funding source, methods, symptoms researched, and number of papers published. I accommodated this by exposing all the available information about the publications on the profile page.</li>
@@ -172,7 +172,7 @@ $( document ).ready(function() {
 			The parent and patient personas found the publications impressive, trust inspiring, and overwhelming. This suggests that progressive disclosure of the article abstract can help us maintain transparency and approachability while accommodating all our personas.
 			</li>
 
-			<li>Adding doctor photos will involve technical overhead, but multiple patients appreciated photos because they added a layer of certainty and comfort in an otherwise confusing and unpredictable process.</li>
+			<li>Adding doctor photos will involve overhead, but multiple patients appreciated photos because they added a layer of certainty and comfort in an otherwise confusing and unpredictable process.</li>
 
 			<li>After asking many doctors and patients what they expected the doctor rating to indicate, no obvious solution emerged. The rating has the potential to communicate the wrong message and unfairly malign doctors. We are continuing to research how to message and compute rating or whether we should include it at all.</li>
 		</ul>
