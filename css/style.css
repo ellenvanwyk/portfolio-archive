@@ -3,27 +3,23 @@
 
 
 h1, h2, h3 {
-    text-align:center; 
     color:#404040; 
     font-family: 'Lato', sans-serif;
-    font-size: 200%;
-    line-height:110%;
 
 } 
 
 
-h1 {font-size: 2.5em;
+h1 {font-size: 2.1em;
     font-weight:300;
     margin:0;
+    text-align:center;
 }
 
-h2 {font-size: 1.7em;
-    font-weight:400;
+h2 {font-size: 1em;
+    font-weight:600;
     text-align: left;
-    border-style: none none dotted;
-	border-color: #e5e5e5;
-	border-width: 3px;
-	padding-bottom: 10px;
+    text-transform:uppercase;
+    letter-spacing: 0.06em;
 }
 
 h3 {
@@ -44,11 +40,12 @@ h4 {font-family: 'Lato';
 
 h6 {font-family: 'Lato';
     font-weight: 400;
-    font-size: 1em;  
+    font-size: 1.14em;  
     color:#979797;
     margin:0;
     font-weight:300;
     margin-bottom:4px;
+    text-transform: lowercase;
 }
 
 
@@ -123,14 +120,16 @@ li{
     font-weight: 300;
     font-size: 1em;
     color: black;
-    margin-left: 28px;
-    margin-right: 28px;
+    margin-left: 26px;
+    margin-right: 26px;
     color: #979797 !important;
 }
 
 .selected {
     color: #404040 !important;
     font-weight:400;
+    border-bottom: medium solid rgb(198, 236, 203);
+    padding-bottom: 4px;
 }
 
 .textLink {
@@ -148,7 +147,6 @@ li{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    margin-top: 30px;
 
 }
 
@@ -204,7 +202,6 @@ nav {
 
 
 .container {
-    line-height:20px;
     background-color:#FFFFFF;
     width:100%;
     padding-bottom: 200px;
@@ -213,14 +210,10 @@ nav {
 .content {
     margin: 0 auto;
      margin-bottom: 80px;
-    border-style: dotted none none;
-    border-color: #e5e5e5;
-    border-width: 3px;
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    padding-top: 40px;
 }
 
 .tableInner {
@@ -263,6 +256,7 @@ a:active  {color:#404040;}
  /* unique title formatting for nav bar */
 h1.title {
     text-align: center;
+    text-transform:uppercase;
 }
 
 .canvas-container {
@@ -286,7 +280,8 @@ h1.title {
     position: relative;
     float: left;
     z-index: 10;
-    margin-top:10px;
+    margin: 16px 0 8px;
+    text-transform: uppercase;
 }
 
 a:hover {
@@ -343,18 +338,13 @@ figcaption{
     margin-right: auto;
 }
 
-.list{
-    width:300px;
-    float:left;
-    margin-bottom: 50px;
-}
 
 .center{
     text-align: center;
 }
 
 .thumbnail-img{
-    width:90%;
+    width:96%;
     height:auto;
     margin:0;
 }
@@ -405,7 +395,7 @@ figcaption{
         margin:20px 0 10px 0;
     }
     .problem-action-result{
-        padding-bottom:20px;
+        padding-bottom:40px;
     }
     .tumblr-photo{
         width:100%;
@@ -433,7 +423,7 @@ figcaption{
     }
 
     .portfolio-description{
-        width:69%;
+        width:67%;
         float:right;
     }
     .link-image{
@@ -452,7 +442,27 @@ figcaption{
         width:40%;
     }
 
+    .right-column{
+        width:67%;
+        float:right;
+    }
 
+
+    .third-list{
+        width:50%;
+        float:left;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .content{
+        padding-top:40px;
+    }
+
+    #project-summary{
+        padding-bottom:40px;
+        padding-top:40px;
+    }
 }
 
 @media(min-width : 900px) {
@@ -507,7 +517,8 @@ figure{
 
 
 .link-icons{
-    text-align: center;
+    text-align: left;
+    margin-top: 40px;
 }
 
 .link-icons .fa{
@@ -543,9 +554,6 @@ figure{
     width:480px;
     margin: 0 auto;
     text-align:center;
-    border-style: dotted none none;
-    border-color: #e5e5e5;
-    border-width: 3px;
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -565,7 +573,7 @@ ol.tumblr_posts {
 
 
 .problem-action-result{
-    text-align: center;
+    text-align: left;
     width:244px;
     display: inline-block;
     vertical-align: top;
@@ -581,6 +589,7 @@ ol.tumblr_posts {
 #project-summary{
     text-align:center;
     margin-top:30px;
+
 }
 
 .tumblr_caption{
@@ -589,6 +598,36 @@ ol.tumblr_posts {
 
 .next-project{
     margin:0 13px;
+}
+
+/*.dotted-spaced {
+  background-image: linear-gradient(to right, #d3d3d3 10%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+}*/
+
+.third-list > ul{
+    padding-left: 16px;
+    padding-right: 20px;
+}
+
+.portrait{
+    margin-top: 60px;
+}
+
+.project-title > h1{
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.project-title{
+    margin-bottom:40px;
+}
+
+.project-title > h2{
+    margin:6px 0 0;
 }
 
 
