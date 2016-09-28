@@ -13,29 +13,25 @@
 
 <body>
 	<nav>
-		<h1 class="title"><a href="index.html">Ellen Van Wyk</a></h1>
-		<h6>Artist + Scientist = UX Designer</h6>
+		<a href = "index.html"><img src = "images/logo.png" id = "logotype" ></a>
 
-		<div class="nav-element">
-			<a class="nav-link selected"href="index.html">Work</a>
-			<div class="canvas-container">
-				<canvas class="link-canvas" width="260" height="260"></canvas>
+		<div class = "nav-links">
+			<div class="nav-element">
+				<a class="nav-link selected"href="index.html">Work</a>
+				<div class="canvas-container">
+					<canvas class="link-canvas" width="260" height="260"></canvas>
+				</div>
 			</div>
-		</div>
-		<div class="nav-element">
-			<a class="nav-link " href="sketchBlog.html">Blog</a>
-			<div class="canvas-container">
-				<canvas class="link-canvas" width="260" height="260"></canvas>
+			<div class="nav-element">
+				<a class="nav-link" href="about.html">About</a>
+				<div class="canvas-container">
+					<canvas class="link-canvas" width="260" height="260"></canvas>
+				</div>
 			</div>
 		</div>
 
-		<div class="nav-element">
-			<a class="nav-link " href="about.html">About</a>
-			<div class="canvas-container">
-				<canvas class="link-canvas" width="260" height="260"></canvas>
-			</div>
-		</div>
 	</nav>
+
 
 <script>
 $( document ).ready(function() {
@@ -60,26 +56,16 @@ $( document ).ready(function() {
 
 
 <div class = "container" >
-	<div class="content" >
-		<img src= "images/etalTempLogo.png" alt = "et al health logo" style="width:200px;height:auto;" class = "displayed">
-		<h1>et al Health</h1>
-		<div id = "project-summary">
-			<div class = "problem-action-result">
-				<h4>Problem</h4>
-				<p>Build a system to improve on the currently complicated and unreliable process of finding a rare disease specialist.</p>
-			</div>
-			<div class = "problem-action-result">
-				<h4>Action</h4>
-				<p>Competitive Analysis, Interviews, Prototype Testing, front end design, and collaboration with data scientists.</p>
-			</div>
-			<div class = "problem-action-result">
-				<h4>Result</h4>
-				<p>Visit our <a href = "http://etalhealth.org">live site</a>. We placed 3<sup>rd</sup> out of 260 projects in our category in the Big Ideas@Berkeley competition. We also won the I School Chen award for our category</p>
-			</div>
-		</div>		
-
+	<div class="article-content" >
+		<h1>et al Health</h1>	
+		<div style=" background-color: rgb(226, 227, 229);">
+			<img style="height: 300px; margin: auto; " src="images/home-images/etal.png">
+			<img style="width: 33%; vertical-align: top; position: relative; top: 5em;" src="images/etaltemplogo.png">
+		</div>
 		<h2>Overview</h2>
-		<p class = "case-study">et al health is a search engine to help people with rare diseases find a qualified specialist. Our algorithm recommends doctors based on their academic research activity. I am leading visual and front end design and conducting user interviews and competitive analysis.</p>
+		<p class = "case-study">et al health is a search engine to help people with rare diseases find a qualified specialist. Our algorithm recommends doctors based on their academic research activity. I led <strong>visual and front end design</strong> and conducted <strong>user interviews</strong> and <strong>competitive analysis</strong>.</p>
+
+		
 
 		<h2>Our Story</h2>
 
@@ -88,13 +74,16 @@ $( document ).ready(function() {
 			 <figcaption class = "center"><span>Diagram of information flow in et al Health.</span></figcaption>
 		</figure>
 			
-		<p class = "case-study">Currently the NIH recommends finding a rare disease doctor by searching PubMed for doctors who actively research the disease and contacting them. A data scientist in our master&rsquo;s program saw an opportunity to simplify this process for patients, some of whom may have never encountered academic research before. I joined his team, excited by the challenge of translating scientific journals into an acessible form, and the opportunity to help the rare disease community, which includes 30 million Americans.</p>
+		<p class = "case-study">Currently the NIH recommends finding a rare disease doctor by searching PubMed for doctors who actively research the disease and contacting them. A data scientist in our master&rsquo;s program saw an opportunity to simplify this process for patients, some of whom may have never encountered academic research before.</p>
+		<p>I joined his team, excited by the challenge of translating scientific journals into an acessible form, and the opportunity to help the rare disease community, which includes 30 million Americans.</p>
 
 
 
-		<p class = "case-study">We began to conduct user research to test our hypothesis that this would help patients find providers, and to understand how it would fit into their search process. et al Health, along with many rare disease patient advocacy groups, operates on the assumption that rare diseases share enough commonalities to host services on common platforms. We have tested this assumption from the beginning by focusing on Castleman, a little known disease, and ALS, which has more publicity and cases. 20 interviews with doctors and patients later, we began to understand the complexity of their search behavior and establish personas, which are summarized below.</p>
+		<p class = "case-study">We began to conduct user research to test our hypothesis that this would help patients find providers, and to understand how it would fit into their search process. et al Health, along with many rare disease patient advocacy groups, operates on the assumption that rare diseases share enough commonalities to host services on common platforms. </p>
+		<p class = "case-study">We have tested this assumption from the beginning by focusing on Castleman, a little known disease, and ALS, which has more publicity and cases. 20 interviews with doctors and patients later, we began to understand the complexity of their search behavior and establish personas, which are summarized below.</p>
 
 		<h2>Personas</h2>
+		<p class = "case-study">Since users bring a wide range of skills and knowledge to our site, it was important to categorize and refer back to three main groups.</p>
 		 <table style="width:100%">
 		 <tr>
 		    <td><h3>The Patient</h3></td>
@@ -156,14 +145,11 @@ $( document ).ready(function() {
 			<li>Some of our interviewees had limited mobility and energy, meaning the site should be very easy to use and accessible.</li>
 		</ul>
 
-		<h2>Wireframes</h2>
-		<a href = "images/searchResults.png">
-			<img class = "mockup" src = "images/searchResults.png" alt = "wireframe #2">
-		</a>
-		<a href = "images/doctorProfile.png">		
-			<img class = "mockup" src = "images/doctorProfile.png" alt = "wireframe #3">
-		</a>
-
+		<h2 >Wireframes</h2>
+		<p >We approached UI design by first quickly hand sketching multiple divergent site layouts. We identified the strengths of each and I began to create wireframes in Sketch. These went through several iterations, and I made an InVision prototype out of the pages to conduct our first round of usability testing.</p>
+		<p class = "desktop" style = "margin-bottom:40px;">Below are two pages from the InVision prototype</p>
+		<div id = "eah-search-wf" class = "design-feature"></div>
+		<div id = "eah-profile-wf" class = "design-feature"></div>
 
 		<h2>User Testing Key Findings</h2>
 		<p>After conducting six usability tests, we learned the following:</p>
@@ -178,15 +164,13 @@ $( document ).ready(function() {
 		</ul>
 		<h2>Visual Design</h2>
 		<p>Our team's belief that design can be both beautiful and accessible drove the visual design process. We also faced the constraints of dynamic content- the layout had to accommodate varied assets and empty states. As the visual design lead I approached these problems by working with live data whenever possible, using Google Material design as a starting point, and holding frequent design reviews.</p>
-		<a href = "images/final-search-results.png">
-			<img class = "mockup" src = "images/final-search-results.png" alt = "final design results page">
-		</a>
-		<a href = "images/final-doctor-profile.png">
-			<img class = "mockup" src = "images/final-doctor-profile.png" alt = "final design profile page">
-		</a>
+		<div id = "eah-profile-final" class = "design-feature"></div>
+		<div id = "eah-search-final" class = "design-feature"></div>
+
+
 		<h2>Results</h2>
 		<p class = "case-study">et al Health is a <a href = "http://etalhealth.org">responsive web app</a> with live data for 4 diseases, including Castleman and ALS. et al Health placed 3rd in our Big Ideas at Berkeley category, and won the I School Chen award. </p>
-
+<!--
 		<h3>More Projects:</h3>
 
 			<div class="link-image next-project">
@@ -209,7 +193,7 @@ $( document ).ready(function() {
 				</figure>
 			</div>
 		</div>
-	
+	-->
 </div>
 <footer>
 		<div class = "vcard footer-icons">

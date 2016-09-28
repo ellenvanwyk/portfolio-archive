@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ellen Van Wyk&rsquo;s Portfolio</title>
+		<link rel=stylesheet type="text/css" href="css/style.css" id="all"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="js/web.js"></script> 
+	</head>
+
+<body>
+	<nav>
+		<a href = "index.html"><img src = "images/logo.png" id = "logotype" ></a>
+
+		<div class = "nav-links">
+			<div class="nav-element">
+				<a class="nav-link selected"href="index.html">Work</a>
+				<div class="canvas-container">
+					<canvas class="link-canvas" width="260" height="260"></canvas>
+				</div>
+			</div>
+			<div class="nav-element">
+				<a class="nav-link" href="about.html">About</a>
+				<div class="canvas-container">
+					<canvas class="link-canvas" width="260" height="260"></canvas>
+				</div>
+			</div>
+		</div>
+
+	</nav>
+
+
+<script>
+$( document ).ready(function() {
+	$(".nav-link").mouseenter(function() {
+		var canvas = $(this).next(".canvas-container").children("canvas")[0];
+		var web = new Web(canvas.width, canvas.height, 150, 0.1, 0.2, 0.097);
+		var renderer = new WebRenderer(web, canvas);
+		var interval = setInterval(function() {
+			web.expand();
+			renderer.render();
+		}, 50);
+		$(this).mouseleave(function() {
+			clearInterval(interval);
+			renderer.clearCanvas();
+		});
+	});
+});
+
+
+</script>
+
+<div class = "container" >
+	<div class="article-content" >
+		<h1>Local Ground Redesign</h1>
+		<div style="text-align: center; background-color: rgb(226, 227, 229);"><img style="height: 300px; margin: auto; text-align: center;" src="images/home-images/localground.png"></div>
+
+		<h2>Overview</h2>
+		<p class = "body-text">Local Ground is an open source tool for creating map visualizations and stories. I am redesigning the UI. This process includes <strong>user research, wireframing, visual and UX design, and HTML/CSS/JavaScript prototyping.</strong> </p>
+		<p>Existing map making platforms either support qualitative (photos, writing, audio, drawings), or quantitative (numerical) data. With Local Ground, users can combine these data types, resulting in more powerful storytelling and a deeper understanding of the problem space. Our user groups include <a href = 'http://dl.acm.org/citation.cfm?id=1926194'>community organizations</a> and <a href = 'http://tap2k.org/papers/ICLS2016.pdf'>grade school classrooms</a>.</p> 
+
+		<h2>Heuristic Evaluation + Research</h2>
+		<p class = "body-text">Since Local Ground already exists, I started the redesign by researching the existing use cases, speaking with team members, and conducting a <strong>heuristic evaluation</strong>. I also conducted <strong>competitive research</strong> in order to better define Local Ground as a product and to understand common UI patterns.
+		</p>
+		<h2>Wireframing</h2>
+		<p class = "body-text">When I felt comfortable with the existing product and landscape, I began to create <strong>wireframes in Sketch</strong> to communicate my suggestions, which included the following large structural changes:
+		</p>
+		<ul>
+			<li>Move the description/media display to panel on the left instead of a popover. The popover supports short descriptions well, but long descriptions obscured the map. The left panel also achieves our goal of foreground media and content.</li>
+			<li>Initially, media were plotted on the map as their media type. This meant that multiple photos for a single location might be stacked on top of each other as individual instances. Since the thumbnails were used for the map pins, this created additional visual confusion. I proposed requiring each photo to be contained in a site in order to be plotted on the map.</li>
+			<li>In the existing version, users switch between projects by turning on and off datasets, and the map preferences (such as map skin and center) are saved as cookies. I recommended making a separate page for each project to better facilitate work on a single project and fit common mental models.</li>
+		</ul>
+		<h2>Alignment and Prototyping</h2>
+		<p>Once our team had aligned on the structure of the site, I began to prototype the interaction details. I chose <strong>HTML/CSS/Javascript</strong> because I knew that prototyping software becomes slow and difficult to use with complex systems, and because the CSS could be used in the implementation phase.</p>
+		<h2>Initial User Testing</h2>
+		<p>I recruited 5 users for our first round of testing. Research sessions included an <strong>interview</strong> on previous exposure to map making software and Local Ground, and then a series of <strong>tasks</strong>. Our main findings included the following:</p>
+		<ul>
+			<li>Overall, users who had experience with the old design found that the new design better foregrounded the tasks they needed to complete.</li>
+			<li>We confirmed our suspicion that some of our labeling terminology was confusing. While this design improved on the previous version, where icons were unlabeled, we still had work to do.</li>
+		</ul>
+		<h2>Iterations and Visual Desgin</h2>
+		<p>Once we had validated the overall structure of the site, I started to prototype interaction details and iterate on the visual design.</p>
+		<p>The interaction design process involved research into components with similar functions. As a single person design team, I sought to optimize my resources by using common, well understood interaction patterns rather than developing new ones that I wouldn't be able to test thoroughly.</p>
+		<p>I used material design guidelines, including cards to guide the visual design. In to foreground user content and avoid pandering to younger users, I used a simple, light, and modern color palette.</p>
+		<p class = "desktop" style = "margin-bottom:40px;">Below are some pages from the current iteration of the prototype</p>
+		<div id = "lg-map-view" class = "design-feature"></div>
+		<div id = "lg-media-view" class = "design-feature"></div>
+		<div id = "lg-presentation-view" class = "design-feature"></div>
+		<h2>Next Steps</h2>
+		<p>I am preparing the prototype for the next round of user testing</p>
+
+		<!--<img class = "displayed full-width" src = "images/lg-wireframe1.png">-->
+
+
+ 		<p><a href = "http://people.ischool.berkeley.edu/~ejvw/lg-redesign/index.html"><i class="fa fa-arrow-circle-right"></i>Visit Local Ground Prototype</a></p>
+<!--
+		<h3>More Projects:</h3>
+			<div class="link-image next-project">
+				<figure>
+					<a href = "beatWave.html"><img src= "images/myo2.png" alt = "myo armband with soundwaves" class="thumbnail-img"></a>
+					<figcaption class = "caption" >Beatwave: A Motion Tracking DJ App</figcaption>	
+				</figure>
+			</div>
+			<div class="link-image next-project">
+				<figure>
+					<a href = "etalHealth.html"><img src= "images/etalTempLogo.png" alt = "et al logo" class="thumbnail-img"></a>
+					<figcaption class = "caption" >et al Health: Rare disease doctor search</figcaption>	
+				</figure>
+			</div>
+			<div class="link-image next-project">
+				<figure>
+						<a href = "amaze.html"><img src= "images/ice.png" alt = "illustration" class="thumbnail-img" ></a>
+						<figcaption class = "caption">Amaze Game Jam</figcaption>
+				</figure>
+			</div>
+		</div>
+	-->
+	</div>
+	<footer>
+			<div class = "vcard footer-icons">
+				<a href="mailto:ejvw@ischool.berkeley.edu" target="_top"><i class="fa fa-envelope-o email" title = "email"></i></a>
+				<a  href = 'https://www.linkedin.com/pub/ellen-van-wyk/87/1b3/244'><i class="fa fa-linkedin" title = "linkedin profile"></i></a>
+				<a href = "vanwykResume.pdf" ><i class="fa fa-file-text-o" title = "resume"></i></a>
+			</div>
+			<span>CSS, HTML, and design by Ellen</a></span>
+	</footer>
+<div>
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75715409-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>

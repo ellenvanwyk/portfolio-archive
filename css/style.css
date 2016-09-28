@@ -1,45 +1,66 @@
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700,300italic,400italic,700italic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,700italic');
 
+
+body{
+    margin:0;
+    color: #212121;
+font-family: 'Open Sans',sans-serif;
+-moz-osx-font-smoothing: grayscale;
+-webkit-text-size-adjust: 100%;
+}
+
+nav{
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    height:60px;
+}
 
 h1, h2, h3 {
     color:#404040; 
-    font-family: 'Lato', sans-serif;
 
 } 
 
-
-h1 {font-size: 2.1em;
-    font-weight:300;
-    margin:0;
-    text-align:center;
+strong{
+    font-weight:600;
 }
+
+h1{
+    color:#404040; 
+    font-family:'Montserrat', sans-serif;
+    font-weight:300;
+    font-size: 2.4em;
+}
+
+.article-content h1{    
+    padding-bottom: 20px;
+}
+
+#logotype{
+    height: 30px;
+    margin: 14px;
+}
+
+p.intro{
+    font-size:1.4em;
+    margin-bottom:40px;
+}
+
+#project-summary p{
+    margin-bottom:10px;
+}
+
 
 h2 {font-size: 1em;
     font-weight:600;
     text-align: left;
     text-transform:uppercase;
     letter-spacing: 0.06em;
-    margin-top: 30px;
+    margin: 40px 0 10px;
+    font-family: 'Montserrat';
 }
 
-h3 {
-    font-weight: 300;
-    font-size: 1.7em;
-    font-style: italic;
-    margin-top:40px;
-    margin-bottom:10px;
-    text-align: center
-}
-
-h4 {font-family: 'Lato';
-    font-weight: 400;
-    font-size: 1em;  
-    color:#545454;
-    margin:0;
-}
-
-h6 {font-family: 'Lato';
+h6 {font-family: 'Open Sans';
     font-weight: 400;
     font-size: 1.14em;  
     color:#979797;
@@ -51,24 +72,38 @@ h6 {font-family: 'Lato';
 
 
 p{
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     margin-top:0;
     z-index:5;
 }
 
+a.linkout{
+    color: #6ACC76 !important;
+}
+
 p, td, .caption, li {
-    font-family: 'Lato';
-    font-size: 1.0em;
+    font-family: 'Open Sans';
+    font-size: 1em;
     color: #404040;
     line-height: 150%;
-    font-weight:300;
+    font-weight:400;
     }
 
 td{
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding:0 10px;
     vertical-align: top;
+}
+
+td .quote{
+    text-align:center;
+}
+
+td:first-child{
+    padding-left:0;
+}
+
+td:last-child{
+    padding-right:0;
 }
 
 .quote{
@@ -91,18 +126,16 @@ td{
 }
    
 
-span {font-family: 'Lato';
-    font-weight: 300;
+span {font-family: 'Open Sans';
     font-size: 1em;
     color:#979797;
     line-height: 40%;
-    font-style: italic;
 }
 
 footer {
     bottom: 10px;
-    width: 100%;
     text-align: center;
+    padding-bottom: 40px;
 }
 
 
@@ -117,24 +150,24 @@ li{
  /* navigation bar at top of each page */
 
 .nav-link {
-    font-family: 'Lato';
-    font-weight: 300;
+    font-family: 'Montserrat';
+    font-weight: 400;
     font-size: 1em;
     color: black;
-    margin-left: 26px;
-    margin-right: 26px;
+    margin-left: 16px;
+    margin-right: 16px;
     color: #979797 !important;
+    padding: 18px 4px;
 }
 
 .selected {
     color: #404040 !important;
-    font-weight:400;
-    border-bottom: medium solid rgb(198, 236, 203);
-    padding-bottom: 4px;
+    font-weight:500;
+    border-bottom: medium solid #6ACC76;
 }
 
 .textLink {
-    font-family: 'Lato';
+    font-family: 'Open Sans';
     text-align: left;
     font-size: 16px;
     color: #404040;;
@@ -151,6 +184,39 @@ li{
 
 }
 
+
+.project-tile .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 5px);
+    opacity:0;
+    background: rgba(34, 86, 96, .1);
+    border-radius:3px;
+
+-o-transition: .3s;
+-ms-transition: .3s;
+-moz-transition: .3s;
+-webkit-transition: .3s;
+}
+
+
+
+.project-tile:hover .after {
+    display: block;
+    opacity:1;
+    
+-o-transition: .3s;
+-ms-transition: .3s;
+-moz-transition: .3s;
+-webkit-transition: .s;
+}
+
+img.full-width{
+    width:100%;
+}
+
 .bigImg{
     width:60%;
 }
@@ -160,18 +226,7 @@ li{
     margin-left: auto;
     margin-right: auto }
 
-nav {
-    display: table;
-    line-height:36px;
-    background-color:#FFFFFF;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: 15px;
-    font-weight: 300;
-    letter-spacing: .07em;
-    color:#979797;
-}
+
 
 #rightNav {
     float:right;
@@ -256,8 +311,7 @@ a:active  {color:#404040;}
 
  /* unique title formatting for nav bar */
 h1.title {
-    text-align: center;
-    text-transform:uppercase;
+    display:inline-block;
 }
 
 .canvas-container {
@@ -277,12 +331,16 @@ h1.title {
 }
 
 .nav-element {
-    left: 0; top: 0;
-    position: relative;
-    float: left;
     z-index: 10;
-    margin: 16px 0 8px;
+    margin: 0 8px;
     text-transform: uppercase;
+    display: inline-block;
+    padding:17px 0;
+}
+
+
+.nav-links{
+    float:right;
 }
 
 a:hover {
@@ -410,6 +468,12 @@ figcaption{
     .content{
         width:90%;
     }
+    .desktop{
+        display:none;
+    }
+    .article-content{
+        margin:80px 20px;
+    }
 }
 
 @media(min-width : 600px) {
@@ -420,7 +484,7 @@ figcaption{
         height:220px;
     }
     #content{
-        width:800px;
+        width:900px;
     }
 
     .portfolio-description{
@@ -439,8 +503,9 @@ figcaption{
     }
     .right-panel{
         float:right;
-        padding:20px;
-        width:40%;
+        padding:0 0 0 20px;
+        width:33%;
+        margin:0 0 20px 30px;
     }
 
     .right-column{
@@ -462,15 +527,105 @@ figcaption{
 
     #project-summary{
         padding-bottom:40px;
-        padding-top:40px;
+    }
+    nav {
+        padding:0 40px;
+        width: calc(100% - 80px);
+        background-color: rgba(255,255,255,0.9);
+        top:0;
+        position:fixed;
+        z-index: 100;
+    }
+    .title-top{
+        margin-top:100px;
+    }
+    .grid-img-1-3{
+        width:calc(24% - 20px);
+        padding:10px;
+    }
+    .grid-img-2-3{
+        width:calc(64% - 20px);
+        padding:10px;
+        display: block;
+        margin: auto;
+    }
+
+    .img-group{
+        margin:10px auto 70px;
+        display:block;
+    }
+
+    .flex-1-3{
+        flex:1;
+        order:2;
+    }
+    .flex-2-3{
+        flex:2;
     }
 }
 
 @media(min-width : 900px) {
     .content{
-        width:800px;
+        margin-left:40px;
+        margin-right:40px;
+        display:flex;
     }
+    .article-content{
+        width:760px;
+        margin:auto;
+        margin-top: 120px;
+    }
+
+    #lg-media-view{
+        background-image: url('../images/LOCALGROUND/presentation2.png');
+        height: 600px;
+    }
+
+    #lg-map-view{
+        background-image: url('../images/LOCALGROUND/presentation3.png');
+        height: 540px;
+    }
+
+    #lg-presentation-view{
+        background-image: url('../images/LOCALGROUND/presentation.png');
+        height:500px;
+    }
+
+    #eah-search-wf{
+        background-image: url('../images/etalhealth/wireframe.png');
+        height:500px;
+    }
+
+    #eah-profile-wf{
+        background-image: url('../images/etalhealth/wireframe2.png');
+        height:600px; 
+        padding-top: 60px;       
+    }
+
+    #eah-search-final{
+        background-image: url('../images/etalhealth/wireframe3.png');
+        height:500px;
+    }
+
+    #eah-profile-final{
+        background-image: url('../images/etalhealth/wireframe4.png');
+        height:500px;  
+        padding-bottom: 40px; 
+    }
+
+    .design-feature{
+        background-size: 1060px auto;
+        background-color: rgba(0,0,0,0.07);
+        background-repeat:no-repeat;
+        background-position: center;
+    }
+    .desktop{
+        display:block;
+    }
+
 }
+
+
 
 .link-image{
     width:240px;
@@ -478,10 +633,23 @@ figcaption{
 }
 
 
+/*Layout*/
+.one-third-col{
+    flex:4;
+    text-align: center;
+}
 
+.project-tile > img{
+    margin-bottom:10px;
+}
 
-.project-title{
-    margin-bottom: 
+.project-img > img{
+    width:100%;
+    border-radius: 3px;
+}
+
+.two-thirds-col{
+    flex:8;
 }
 
 #borderline{
@@ -588,9 +756,8 @@ ol.tumblr_posts {
 }
 
 #project-summary{
-    text-align:center;
-    margin-top:30px;
-
+    margin-top:60px;
+    display:flex;
 }
 
 .tumblr_caption{
@@ -617,10 +784,33 @@ ol.tumblr_posts {
     margin-top: 60px;
 }
 
-.project-title > h1{
-    font-size: 1.6em;
-    font-weight: 400;
-    margin-bottom: 5px;
+
+.project-tile{
+    margin-right: 20px;
+}
+
+.project-img{
+    position:relative;
+}
+
+.project-tile:last-child{
+    margin-right: 0;
+}
+
+.project-tile > h3{
+    margin:0;
+    font-family:'Montserrat';
+    text-transform:uppercase;
+    font-size:1em;
+    text-align: left;
+}
+
+.project-tile > h4{
+    margin:0;
+    text-align: left;
+    font-family:'Lato';
+    font-style:italic;
+    font-weight:400;
 }
 
 .project-title{
@@ -636,5 +826,10 @@ ol.tumblr_posts {
     height:auto;
     padding:20px 0 40px;
 }
+
+.article-flex{
+    display:flex;
+}
+
 
 
