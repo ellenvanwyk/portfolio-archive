@@ -32,6 +32,8 @@ h1{
     font-size: 2.4em;
 }
 
+
+
 .article-content h1{    
     padding-bottom: 20px;
 }
@@ -832,5 +834,10 @@ ol.tumblr_posts {
     display:flex;
 }
 
+
+.tmblr-iframe {
+    top:70px !important;
+    right: 10px !important;
+}
 
 
