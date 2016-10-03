@@ -21,7 +21,7 @@ h1, h2, h3 {
 
 } 
 
-strong{
+.skill{
     font-weight:600;
 }
 
@@ -42,8 +42,9 @@ h1{
 }
 
 p.intro{
-    font-size:1.4em;
+    font-size:1.8em;
     margin-bottom:40px;
+    font-family:'Montserrat';
 }
 
 #project-summary p{
@@ -125,12 +126,6 @@ td:last-child{
     text-align: center;
 }
    
-
-span {font-family: 'Open Sans';
-    font-size: 1em;
-    color:#979797;
-    line-height: 40%;
-}
 
 footer {
     bottom: 10px;
@@ -260,7 +255,6 @@ img.full-width{
 .container {
     background-color:#FFFFFF;
     width:100%;
-    padding-bottom: 200px;
 }
 
 .content {
@@ -491,9 +485,6 @@ figcaption{
         width:67%;
         float:right;
     }
-    .link-image{
-        float:left;
-    }
     .problem-action-result{
         padding-right:20px;
     }
@@ -614,7 +605,7 @@ figcaption{
     }
 
     .design-feature{
-        background-size: 1060px auto;
+        background-size: 860px auto;
         background-color: rgba(0,0,0,0.07);
         background-repeat:no-repeat;
         background-position: center;
@@ -630,6 +621,7 @@ figcaption{
 .link-image{
     width:240px;
     height:auto;
+    margin:auto;
 }
 
 
@@ -639,11 +631,8 @@ figcaption{
     text-align: center;
 }
 
-.project-tile > img{
-    margin-bottom:10px;
-}
 
-.project-img > img{
+.project-img img{
     width:100%;
     border-radius: 3px;
 }
@@ -791,6 +780,7 @@ ol.tumblr_posts {
 
 .project-img{
     position:relative;
+    margin-bottom: 10px;
 }
 
 .project-tile:last-child{
@@ -828,6 +818,17 @@ ol.tumblr_posts {
 }
 
 .article-flex{
+    display:flex;
+}
+
+.more-projects{
+    padding-top: 70px;
+    padding-bottom: 40px;
+    margin-top:100px;
+    border-top:1px solid #d3d3d3;
+}
+
+.more-projects > div{
     display:flex;
 }
 
