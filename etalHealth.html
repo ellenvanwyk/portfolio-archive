@@ -67,28 +67,27 @@ $( document ).ready(function() {
 		<h1>et al Health</h1>	
 		<img src = "images/home-images/etal-header.png" style = "width:100%;">
 		<h2>Overview</h2>
-		<p class = "case-study">et al health is a search engine to help people with rare diseases find a qualified specialist. Our algorithm recommends doctors based on their academic research activity. I led <strong>visual and front end design</strong> and conducted <strong>user interviews</strong> and <strong>competitive analysis</strong>. et al Health placed 3rd in our Big Ideas at Berkeley category, and we won the I School Chen award</p>
+		<p class = "case-study">et al health is a search engine to help people with rare diseases find a qualified specialist. Our algorithm recommends doctors based on their academic research activity. I led <span class = "skill">visual and front end design</span> and conducted <span class = "skill">user interviews</span> and <span class = "skill">competitive analysis</span>. et al Health placed 3rd in our Big Ideas at Berkeley category, and we won the I School Chen award</p>
 
 		
 
-		<h2>Our Story</h2>
+		<h2>Identifying A Need</h2>
 
 		<figure  class = "right-panel">
 			<img src= "images/flowchart.png" alt = "flow chart of et al health data" >
 			 <figcaption class = "center"><span>Diagram of information flow in et al Health.</span></figcaption>
 		</figure>
-			
+		
 		<p class = "case-study">Currently the NIH recommends finding a rare disease doctor by searching PubMed for doctors who actively research the disease and contacting them. A data scientist in our master&rsquo;s program saw an opportunity to simplify this process for patients, some of whom may have never encountered academic research before.</p>
 		<p>I joined his team, excited by the challenge of translating scientific journals into an acessible form, and the opportunity to help the rare disease community, which includes 30 million Americans.</p>
 
-
-
+		<h2>Testing Our Assumptions</h2>
 		<p class = "case-study">We began to conduct user research to test our hypothesis that this would help patients find providers, and to understand how it would fit into their search process. et al Health, along with many rare disease patient advocacy groups, operates on the assumption that rare diseases share enough commonalities to host services on common platforms. </p>
 		<p class = "case-study">We have tested this assumption from the beginning by focusing on Castleman, a little known disease, and ALS, which has more publicity and cases. 20 interviews with doctors and patients later, we began to understand the complexity of their search behavior and establish personas, which are summarized below.</p>
 
 		<h2>Identifying Our Users</h2>
 		<p class = "case-study">Since users bring a wide range of skills and knowledge to our site, it was important to categorize and refer back to three main groups during the design process.</p>
-		 <table style="width:100%">
+		 <table style="width:100%" class = "personas">
 		 <tr>
 		    <td><h3>The Patient</h3></td>
 		    <td><h3>The Doctor</h3></td>
@@ -135,18 +134,18 @@ $( document ).ready(function() {
 		    </td>
 		  </tr>
 		</table> 
-		<p> I illustrated the personas and contributed to their development</p>
+		<p> I illustrated the proto personas and contributed to their development</p>
 
 		<h2>Interview Key Findings</h2>
 
 		<ul>
 			<li>
-			 Many rare diseases have subtypes, which adds yet another layer of complexity. For example, Castleman has 4 different subtypes. Initially, we hoped to be able to include keywords such as subtypes, demographics, and symptoms, but we discovered there was no feasible data solution. Later versions of the designs do include subtypes, which our data scientists were able to accommodate.  
+			 <span class = "bullet-lead">Rare Diseases are more complicated than we had imagined:  </span>Many rare diseases have subtypes, which adds yet another layer of complexity. For example, Castleman has 4 different subtypes. Initially, we hoped to be able to include keywords such as subtypes, demographics, and symptoms, but we discovered there was no feasible data solution. Later versions of the designs do include subtypes, which our data scientists were able to accommodate.  
 			</li>
 
-			<li>Different users want to see different signals of doctor quality, including funding source, methods, symptoms researched, and number of papers published. I accommodated this by exposing all the available information about the publications on the profile page.</li>
+			<li><span class = "bullet-lead">No simple quality signal:  </span>Different users want to see different signals of doctor quality, including funding source, methods, symptoms researched, and number of papers published. I accommodated this by exposing all the available information about the publications on the profile page.</li>
 
-			<li>Some of our interviewees had limited mobility and energy, meaning the site should be very easy to use and accessible.</li>
+			<li><span class = "bullet-lead">Prioritize accessibility:  </span>Some of our interviewees had limited mobility and energy, meaning the site should be very easy to use and accessible.</li>
 		</ul>
 
 		<h2 >Wireframes</h2>
@@ -159,12 +158,12 @@ $( document ).ready(function() {
 		<p>After conducting six usability tests, we learned the following:</p>
 		<ul>
 			<li>
-			The parent and patient personas found the publications impressive, trust inspiring, and overwhelming. This suggests that progressive disclosure of the article abstract can help us maintain transparency and approachability while accommodating all our personas.
+			<span class = "bullet-lead">Use progressive disclosure:  </span>The parent and patient personas found the publications impressive, trust inspiring, and overwhelming. This suggests that progressive disclosure of the article abstract can help us maintain transparency and approachability while accommodating all our personas.
 			</li>
 
-			<li>Adding doctor photos will involve overhead, but multiple patients appreciated photos because they added a layer of certainty and comfort in an otherwise confusing and unpredictable process.</li>
+			<li><span class = "bullet-lead">Add comfort with doctor photos:  </span>Adding doctor photos will involve overhead, but multiple patients appreciated photos because they added a layer of certainty and comfort in an otherwise confusing and unpredictable process.</li>
 
-			<li>After asking many doctors and patients what they expected the doctor rating to indicate, no obvious solution emerged. The rating has the potential to communicate the wrong message and unfairly malign doctors. We are continuing to research how to message and compute rating or whether we should include it at all.</li>
+			<li><span class = "bullet-lead">Stay honest:  </span>After asking many doctors and patients what they expected the doctor rating to indicate, no obvious solution emerged. The rating has the potential to communicate the wrong message and unfairly malign doctors. We are continuing to research how to message and compute rating or whether we should include it at all.</li>
 		</ul>
 		<h2>Visual Design</h2>
 		<p>Our team's belief that design can be both beautiful and accessible drove the visual design process. We also faced the constraints of dynamic content- the layout had to accommodate varied assets and empty states. As the visual design lead I approached these problems by working with live data whenever possible, using Google Material design as a starting point, and holding frequent design reviews.</p>
