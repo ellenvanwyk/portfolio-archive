@@ -586,7 +586,7 @@ figcaption{
 
     #eah-search-wf{
         background-image: url('../images/etalhealth/wireframe.png');
-        height:500px;
+        height:560px;
     }
 
     #eah-profile-wf{
@@ -641,6 +641,10 @@ figcaption{
 
 .two-thirds-col{
     flex:8;
+}
+
+.one-sixth-col{
+    flex:2;
 }
 
 #borderline{
