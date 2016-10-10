@@ -285,6 +285,7 @@ img.full-width{
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+    max-width:1300px;
 }
 
 .tableInner {
@@ -860,6 +861,11 @@ ol.tumblr_posts {
 
 .more-projects > div{
     display:flex;
+}
+
+.more-projects .fa-arrow-circle-right, .more-projects .fa-arrow-circle-left{
+    padding-top:10px;
+    font-size:2em;
 }
 
 
