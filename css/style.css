@@ -6,7 +6,7 @@
 body{
     margin:0;
     color: #212121;
-font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Sans',sans-serif;
 -moz-osx-font-smoothing: grayscale;
 -webkit-text-size-adjust: 100%;
 }
@@ -20,6 +20,14 @@ h1, h2, h3 {
     color:#404040; 
 
 } 
+
+.linkout{
+    display:inline-block;
+}
+
+.linkout a{
+    display:block;
+}
 
 
 .personas h3{
@@ -702,7 +710,7 @@ figure{
 }
 
 .link-icons .fa{
-    font-size: 2em;
+    font-size: 1.4em;
     padding:10px;
 }
 
