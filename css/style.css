@@ -51,7 +51,12 @@ h1{
     font-size: 2.4em;
 }
 
-
+.img-tile{
+    width:100px;
+    padding:40px 10px 50px;
+    display:inline-block;
+    border-radius:3px;
+}
 
 .article-content h1{    
     padding-bottom: 20px;
@@ -345,7 +350,6 @@ h1.title {
 
 .nav-element {
     z-index: 10;
-    margin: 0 18px;
     text-transform: uppercase;
     display: inline-block;
     height:60px;
@@ -456,7 +460,7 @@ figcaption{
         padding-bottom: 40px;
     }
     .nav-link{
-        margin:0 10px;
+        margin:0 ;
     }
     #borderline{
         width:100%; 
@@ -480,9 +484,19 @@ figcaption{
     .tumblr_photo_post{
         width:300px;
     }
+    .nav-element{
+        margin: 0 6px;
+    }
+
+     .article-title-img{
+        width:100%;
+    }
 }
 
 @media(max-width : 900px) {
+
+
+
     .content{
         width:90%;
     }
@@ -491,6 +505,9 @@ figcaption{
     }
     .article-content{
         margin:80px 20px;
+    }
+    .project-tile{
+        margin-bottom: 50px;
     }
 }
 
@@ -577,9 +594,21 @@ figcaption{
     .flex-2-3{
         flex:2;
     }
+
+    .nav-element{
+        margin: 0 18px;
+    }
+
+     .article-title-img{
+        height: 300px; 
+    }
 }
 
 @media(min-width : 900px) {
+
+    .project-tile{
+        margin-right: 20px;
+    }
     .content{
         margin-left:40px;
         margin-right:40px;
@@ -638,6 +667,13 @@ figcaption{
         display:block;
     }
 
+
+
+}
+
+.article-title-img{
+    margin: auto; 
+    text-align: center;
 }
 
 
@@ -807,9 +843,7 @@ ol.tumblr_posts {
 }
 
 
-.project-tile{
-    margin-right: 20px;
-}
+
 
 .project-img{
     position:relative;
