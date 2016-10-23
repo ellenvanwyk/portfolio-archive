@@ -658,9 +658,13 @@ figcaption{
 
     .design-feature{
         background-size: 860px auto;
-        background-color: rgba(0,0,0,0.07);
+        background-color: rgba(0,0,0,0.035);
         background-repeat:no-repeat;
         background-position: center;
+    }
+
+    .design-feature.localground{
+        background-color:rgba(0,0,60,0.035);
     }
     .desktop{
         display:block;
