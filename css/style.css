@@ -623,10 +623,14 @@ figcaption{
         background-image: url('../images/LOCALGROUND/presentation2.png');
         height: 600px;
     }
+    #lg-maps-view{
+        background-image: url('../images/LOCALGROUND/presentation4.png');
+        height: 530px;
+    }
 
     #lg-map-view{
         background-image: url('../images/LOCALGROUND/presentation3.png');
-        height: 540px;
+        height: 580px;
     }
 
     #lg-presentation-view{

@@ -93,20 +93,34 @@ $( document ).ready(function() {
 		<h2>Initial User Testing</h2>
 		<p>I recruited 5 users for our first round of testing. Research sessions included an <span class = "skill">interview</span> on previous exposure to map making software and Local Ground, and then a series of <span class = "skill">tasks</span>. Our main findings included the following:</p>
 		<ul>
-			<li><span class = "bullet-lead">Improved workflow: </span>Overall, users who had experience with the old design found that the new design better foregrounded the tasks they needed to complete.</li>
-			<li><span class = "bullet-lead">Fix Terminology: </span>We confirmed that some of our labeling terminology was confusing. While this design improved on the previous version, where icons were unlabeled, I began to conduct additional research on mapping and GIS terminology for inspiration.</li>
+			<li>
+				<span class = "bullet-lead">Improved workflow: </span>Overall, users who had experience with the old design found that the new design better foregrounded the tasks they needed to complete.
+			</li>
+			<li>
+				<span class = "bullet-lead">Fix Terminology: </span>We confirmed that some of our labeling terminology was confusing. While this design improved on the previous version, where icons were unlabeled, I began to conduct additional research on mapping and GIS terminology for inspiration.
+			</li>
 		</ul>
 		<h2>Iterations and Visual Desgin</h2>
-		<p>Once we had validated the overall structure of the site, I started to prototype <span class = "skill">interaction</span> details and iterate on the <span class = "skill">visual design</span>. My team went out into the city of Berkeley and photographed public artwork. Using real data helps me design for the worst case scenarios, and resulted in an interesting mini project to present at the Local Ground workshop</p>
-		<p>The interaction design process involved research into components with similar functions. As a single person design team, I sought to optimize my resources by using common, well understood interaction patterns rather than developing new ones that I wouldn't be able to test thoroughly.</p>
-		<p>I used material design guidelines, including cards to guide the visual design. In to foreground user content and avoid pandering to younger users, I used a simple, light, and modern color palette.</p>
-		<p class = "desktop" style = "margin-bottom:40px;">Below are some pages from the current iteration of the prototype</p>
-		<div id = "lg-map-view" class = "design-feature localground" title = "IMAGE: DATA VIEW  In this view, users can edit their data, including media, in bulk. Media and sites can be presented as either a card or spreadsheet view"></div>
-		<div id = "lg-media-view" class = "design-feature localground" title = "Image: MAP VIEW In the map view, users can create sites 1 at a time. They can also style the map pins according to properties of the data. Users can create custom sites, including media, properties, descriptions, and tags, in this panel "></div>
-		<div id = "lg-presentation-view" class = "design-feature" title = "Image: PUBLISHED VIEW"></div>
-		<h2>Next Steps</h2>
-		<p>I am currently running another round of user testing.</p>
+		<p>Once we had validated the overall structure of the site, I started to prototype <span class = "skill">interaction</span> details and iterate on the <span class = "skill">visual design</span>. My team went out into the city of Berkeley and photographed public artwork. Using real data helps me design for the worst case scenarios, and resulted in an interesting mini project to present at the Local Ground workshop.</p>
+		<p>I used material design guidelines to guide the visual design. This is appropriate for Local Ground's origins as a tool that overlays hand drawn maps onto digital maps. In to foreground user content and avoid pandering to younger users, I used a simple, light, and modern color palette.</p>
+		<h2>User Testing and Design Critique</h2>
+		<p>I completed a second round of usability testing with 5 participants who had a range of experience with Local Ground. I also showed Local Ground to an experienced design mentor. These informed the final stage of the prototype that I am now focusing on implementing</p>
+		<ul>
+			<li>
+				<span class = "bullet-lead">Visible feedback: </span>Initially, the dialogue for creating a visualization happened in a modal window; a pattern used in other GIS software. However, users weren't sure what they were actually doing when trying to complete tasks. So I moved the modal to a panel, and subsequent users did not experience the same problems.
+				<div style="text-align: center;"><img src="images/LOCALGROUND/wireframe-3.png" style="width:80%;margin: auto;padding: 20px 0 40px;" alt = "illustration showing the original popup and then the proposed right panel "></div>
+			</li>
+			<li>
+				<span class = "bullet-lead">Visible Modes: </span>Local Ground must support creating different visual interpretations of one crowd-sourced datset. Previously, the option for switching between visualization modes was nested under a tab. After talking to a design mentor, I realized that it had to be visible at the top level, and to achieve this I would have to restructure the site. This also worked well some new information that one of our users liked being able to create a map using raw photos. By keeping media and sites in different tabs, the problem of photos cluttering a map could be avoided. While users did not catch on to the structure as quickly, during testing, we believe the segmentation of tasks will make it usable in the long term. For more detail, please see the site map below.
+			</li>
+		</ul>
+		<img src = "images/LOCALGROUND/site-map-stuff.svg" style = "padding:20px 0 40px;margin:0 -20px;">
 
+		<p class = "desktop" style = "margin-bottom:40px;">Below are some pages from the current iteration of the prototype</p>
+		<div id = "lg-map-view" class = "design-feature localground" title = "IMAGE: SITS TAB  In this view, users can edit their data, including media, in bulk. Media and sites can be presented as either a card or spreadsheet view"></div>
+		<div id = "lg-media-view" class = "design-feature localground" title = "Image: MEDIA VIEW In the map view, users can create sites 1 at a time. They can also style the map pins according to properties of the data. Users can create custom sites, including media, properties, descriptions, and tags, in this panel "></div>
+		<div id = "lg-maps-view" class = "design-feature localground" title = "Image: MAP VIEW "></div>
+		<div id = "lg-presentation-view" class = "design-feature" title = "Image: PUBLISHED VIEW"></div>
 
 		<!--<img class = "displayed full-width" src = "images/lg-wireframe1.png">-->
 
