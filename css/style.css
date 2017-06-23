@@ -609,8 +609,6 @@ figcaption{
         margin-right: 20px;
     }
     .content{
-        margin-left:40px;
-        margin-right:40px;
         display:flex;
     }
     .article-content{
