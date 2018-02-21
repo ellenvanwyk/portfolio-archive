@@ -257,22 +257,6 @@ img.full-width{
     padding-top: 35px;
 }
 
-.dog {
-    line-height:30px;
-    float:left;
-    padding:10px;
-    text-align: center;
-}
-
-
-.dogOuter{
-    max-width: 1020px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 300px;
-    margin-bottom: 10px;
-}
-
 
 .container {
     background-color:#FFFFFF;
@@ -280,12 +264,7 @@ img.full-width{
 }
 
 .content {
-    margin: 0 auto;
-     margin-bottom: 80px;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+    margin: 30px auto 40px;
     max-width:1300px;
 }
 
@@ -604,6 +583,10 @@ figcaption{
 }
 
 @media(min-width : 900px) {
+    .content.row{
+        padding-left:40px;
+        padding-right:40px;
+    }
 
     .project-tile{
         margin-right: 20px;
