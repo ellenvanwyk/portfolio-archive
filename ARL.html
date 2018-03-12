@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Work | Ellen Van Wyk</title>
+		<link rel=stylesheet type="text/css" href="css/style.css" id="all"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="js/web.js"></script> 
+	</head>
+
+<body>
+
+	<nav>
+		<a href = "index.html"><img src = "images/logo.png" id = "logotype" ></a>
+
+		<div class = "nav-links">
+			<div class="nav-element selected">
+				<a class="nav-link" href="index.html">Work</a>
+				<div class="canvas-container">
+					<canvas class="link-canvas" width="260" height="260"></canvas>
+				</div>
+			</div>
+			<div class="nav-element">
+				<a class="nav-link" href="sketchBlog.html">Blog</a>
+				<div class="canvas-container">
+					<canvas class="link-canvas" width="260" height="260"></canvas>
+				</div>
+			</div>
+			<div class="nav-element">
+				<a class="nav-link" href="about.html">About</a>
+				<div class="canvas-container">
+					<canvas class="link-canvas" width="260" height="260"></canvas>
+				</div>
+			</div>
+		</div>
+
+	</nav>
+
+
+<script>
+$( document ).ready(function() {
+	$(".nav-link").mouseenter(function() {
+		var canvas = $(this).next(".canvas-container").children("canvas")[0];
+		var web = new Web(canvas.width, canvas.height, 150, 0.1, 0.2, 0.097);
+		var renderer = new WebRenderer(web, canvas);
+		var interval = setInterval(function() {
+			web.expand();
+			renderer.render();
+		}, 50);
+		$(this).mouseleave(function() {
+			clearInterval(interval);
+			renderer.clearCanvas();
+		});
+	});
+});
+
+
+</script>
+
+
+
+<div class = "container" >
+	<div class="article-content" >
+		<h1>Animation Research Labs</h1>	
+		<img src = "images/home-images/etal-header.png" style = "width:100%;">
+		<h2>Overview</h2>
+		<p class = "case-study">My team developed a tool to help animators learn how to model more recognizable facial expressions. I contributed 3D modeling in Maya, statistics in MATLAB, designed and carried out the user study, and wrote sections of the paper submitted to SIGGRAPH.</p>
+
+		
+
+		<h2>Identifying A Need</h2>
+
+		<figure  class = "right-panel">
+			<img src= "images/flowchart.png" alt = "flow chart of et al health data" >
+			 <figcaption class = "center"><span>Diagram of information flow in et al Health.</span></figcaption>
+		</figure>
+		
+		<p class = "case-study">Currently the NIH recommends finding a rare disease doctor by searching PubMed for doctors who actively research the disease and contacting them. A data scientist in our master&rsquo;s program saw an opportunity to simplify this process for patients, some of whom may have never encountered academic research before.</p>
+		<p>I joined his team, excited by the challenge of translating scientific journals into an acessible form, and the opportunity to help the rare disease community, which inc
+
+ 		<div class = "more-projects">
+ 			<div>
+				<div class = "one-third-col project-tile">
+					<div class = "project-img">
+						<a href = "localground.html">
+							<img src = "images/home-images/localground.png" >
+							<div class = "after"></div>
+						</a>
+					</div>
+					<h3><a href = "localground.html">Previous Project: Local Ground</a></h3>
+					<a href = "localground.html"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
+				</div>
+				<div class = "one-third-col project-tile">
+				</div>
+				<div class = "one-third-col project-tile">
+					<div class = "project-img">
+						<a href = "designresearch.html">
+							<img src = "images/home-images/circlefutures.png">
+							<div class = "after"></div>
+						</a>
+					</div>
+					<h3><a href = "designresearch.html">Next Project: Design Research</a></h3>
+					<a href = "designresearch.html"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+</div>
+<footer>
+		<div class = "vcard footer-icons">
+			<a href="mailto:ejvw@ischool.berkeley.edu" target="_top"><i class="fa fa-envelope-o email" title = "email"></i></a>
+			<a  href = 'https://www.linkedin.com/pub/ellen-van-wyk/87/1b3/244'><i class="fa fa-linkedin" title = "linkedin profile"></i></a>
+			<a href = "vanwykResume.pdf" ><i class="fa fa-file-text-o" title = "resume"></i></a>
+		</div>
+		<span>CSS, HTML, and design by Ellen</a></span>
+</footer>
+<div>
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75715409-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>

@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Work | Ellen Van Wyk</title>
+		<link rel=stylesheet type="text/css" href="css/style.css" id="all"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="js/web.js"></script> 
+	</head>
+
+<body>
+
+	<nav>
+		<a href = "index.html"><img src = "images/logo.png" id = "logotype" ></a>
+
+		<div class = "nav-links">
+			<div class="nav-element selected">
+				<a class="nav-link" href="index.html">Work</a>
+				<div class="canvas-container">
+					<canvas class="link-canvas" width="260" height="260"></canvas>
+				</div>
+			</div>
+			<div class="nav-element">
+				<a class="nav-link" href="sketchBlog.html">Blog</a>
+				<div class="canvas-container">
+					<canvas class="link-canvas" width="260" height="260"></canvas>
+				</div>
+			</div>
+			<div class="nav-element">
+				<a class="nav-link" href="about.html">About</a>
+				<div class="canvas-container">
+					<canvas class="link-canvas" width="260" height="260"></canvas>
+				</div>
+			</div>
+		</div>
+
+	</nav>
+
+
+<script>
+$( document ).ready(function() {
+	$(".nav-link").mouseenter(function() {
+		var canvas = $(this).next(".canvas-container").children("canvas")[0];
+		var web = new Web(canvas.width, canvas.height, 150, 0.1, 0.2, 0.097);
+		var renderer = new WebRenderer(web, canvas);
+		var interval = setInterval(function() {
+			web.expand();
+			renderer.render();
+		}, 50);
+		$(this).mouseleave(function() {
+			clearInterval(interval);
+			renderer.clearCanvas();
+		});
+	});
+});
+
+
+</script>
+
+
+
+<div class = "container" >
+	<div class="article-content" >
+		<h1>Animated Film + At Ease</h1>
+		<img src = "images/vanwyk_ellen_hand.png" alt = "human brain"style="width:250px;height:auto" class = "displayed">
+		<p>I led prop shading and contributed to modeling, concept design, and animation for the animated short At Ease, a product of the University of Washington's animation capstone.</p>
+
+		<h3>Maya Fundamentals</h3>
+		<p>During the first quarter, we worked on independent projects to gain exposure to the basics of the animation pipeline in Autodesk Maya, including lighting, rigging, modeling, animating, shading, and compositing.</p>
+		<img src= "images/fish_skeleton.png" alt = "sharacter" style="width:300px;height:auto" class = "displayed">
+
+		<h3>Animation Capstone</h3>
+		<p>We produced the film at the end of the first quarter and for the next 2 quarters.  I led the prop shading group to make a consistent look and feel for the whole film.  I also contributed to character design, concept art, 3D modeling, and animation.</p>
+		</div>
+		
+		<img src= "images/clock_verson1_ellen.png" alt = "clock concept art" style="width:380px;height:auto" class = "displayed"><img src= "images/dumpster_concept.png" alt = "dumpster concept art" style="width:600px;height:auto"class = "displayed"><figcaption><span>A sample from the concept art process, where we find reference material according to the director's instrutions, interpret it into the look and feel of the film, then provide a visualization for the director.  Since our film was set in the 1940's, we compromised between accuracy and visual appeal.</span></figcaption>
+		<br>
+		<img src= "images/props_bashir_1 copy.jpg" alt = "Concept art before" style="width:auto;height:230px" class = "displayed"><img src= "images/barracks_ground_vers3_ellen.png" alt = "dumpster concept art" style="width:auto;height:280px" class = "displayed"><figcaption><span>A sample of the evolution of the look and feel.  All design decisions had to be motivated by the story and submitted with reference, as I demonstrate to the left.  Over the course of many iterations, the layout evolved into the image on the right as a collaboration with my prop texturing team and the lighting team.  Each design had to be presented with outside reference, and had to fit in with the rest of the props and characters, known as the 'family tree'.</span></figcaption>
+
+
+ 		<div class = "more-projects">
+ 			<div>
+				<div class = "one-third-col project-tile">
+					<div class = "project-img">
+						<a href = "localground.html">
+							<img src = "images/home-images/localground.png" >
+							<div class = "after"></div>
+						</a>
+					</div>
+					<h3><a href = "localground.html">Previous Project: Local Ground</a></h3>
+					<a href = "localground.html"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
+				</div>
+				<div class = "one-third-col project-tile">
+				</div>
+				<div class = "one-third-col project-tile">
+					<div class = "project-img">
+						<a href = "designresearch.html">
+							<img src = "images/home-images/circlefutures.png">
+							<div class = "after"></div>
+						</a>
+					</div>
+					<h3><a href = "designresearch.html">Next Project: Design Research</a></h3>
+					<a href = "designresearch.html"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+</div>
+<footer>
+		<div class = "vcard footer-icons">
+			<a href="mailto:ejvw@ischool.berkeley.edu" target="_top"><i class="fa fa-envelope-o email" title = "email"></i></a>
+			<a  href = 'https://www.linkedin.com/pub/ellen-van-wyk/87/1b3/244'><i class="fa fa-linkedin" title = "linkedin profile"></i></a>
+			<a href = "vanwykResume.pdf" ><i class="fa fa-file-text-o" title = "resume"></i></a>
+		</div>
+		<span>CSS, HTML, and design by Ellen</a></span>
+</footer>
+<div>
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75715409-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
